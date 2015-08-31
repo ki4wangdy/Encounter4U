@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+    
+    <TextView 
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dialog_title_height"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/dialog_padding_left"
+        android:text="@string/dialog_common_title"
+        android:textColor="@color/dialog_title_textcolor"
+        android:textSize="@dimen/dialog_title_textsize"/>
+
+    <View 
+        android:id="@+id/dialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_dp"
+        android:layout_below="@id/dialog_title"
+        android:background="@color/dialog_line_color"
+        android:layout_marginRight="@dimen/dialog_line_margin_left"
+        android:layout_marginLeft="@dimen/dialog_line_margin_left"/>
+
+    <FrameLayout
+        android:id="@+id/dialog_common_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_user_dialog_height"
+        android:layout_below="@id/dialog_line"/>
+
+    <View
+        android:id="@+id/dialog_confirm_block_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/dialog_confirm_block_line_color"
+        android:layout_below="@id/dialog_common_view"/>
+    
+    <LinearLayout 
+        android:id="@+id/dialog_confirm_block"
+        android:orientation="horizontal"
+        android:layout_below="@id/dialog_confirm_block_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_confirm_block_height">
+        <Button 
+            android:id="@+id/dialog_common_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/dialog_confirm_bg"
+            android:text="@string/dialog_confirm_cancel"
+            android:textColor="@color/dialog_confirm_cancel_color"
+            android:textSize="@dimen/dialog_confirm_text_size"/>
+        <View 
+            android:layout_width="@dimen/line_width"
+            android:layout_height="wrap_content"
+            android:background="@color/dialog_confirm_block_line_color"/>
+        <Button 
+            android:id="@+id/dialog_common_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/dialog_confirm_bg"
+            android:text="@string/dialog_confirm_ok"
+			android:textColor="@color/dialog_confirm_ok_color"
+            android:textSize="@dimen/dialog_confirm_text_size"/>
+    </LinearLayout>
+    
+</RelativeLayout>

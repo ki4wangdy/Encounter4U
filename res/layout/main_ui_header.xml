@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/main_ui_header_bg"
+    android:drawableLeft="@drawable/main_ui_header_nolan"
+    android:paddingLeft="@dimen/main_ui_header_margin_left"
+    android:drawablePadding="@dimen/main_ui_header_margin_text_icon"
+    android:text="@string/main_ui_header_content"
+    android:textColor="@color/main_ui_header_text_color"
+    android:textSize="@dimen/main_ui_text_size"
+    android:layout_height="@dimen/main_ui_header_height"/>

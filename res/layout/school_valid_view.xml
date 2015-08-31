@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color">
+
+    <include
+        android:id="@+id/school_verify_title"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_view" />
+
+	<RelativeLayout 
+        android:id="@+id/school_choose_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_block_height"
+        android:layout_marginTop="@dimen/school_verify_choose_margin_top"
+        android:layout_marginLeft="@dimen/register_nick_block_margin_left"
+        android:layout_marginRight="@dimen/register_nick_block_margin_left"
+        android:layout_below="@id/school_verify_title">
+        
+		<View 
+		    android:id="@+id/school_choose_line"
+			android:layout_width="match_parent"
+            android:layout_height="@dimen/register_nick_block_bg"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/register_nick_line_default"/>
+        
+		<TextView 
+            android:id="@+id/school_choose_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:text="@string/school_verify_school_text"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+        
+        <EditText
+            android:id="@+id/school_choose_content"
+            style="@style/login.edittext.style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/register_nick_content_margin_left"
+            android:layout_toRightOf="@id/school_choose_text"
+            android:hint="@string/school_verify_school_hint_text"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:singleLine="true"
+            android:textColor="@color/register_nick_text_color"
+            android:textColorHint="@color/register_nick_content_hint_text_color"
+            android:textSize="@dimen/register_nick_text_size" />
+
+    </RelativeLayout>
+    
+	<RelativeLayout 
+        android:id="@+id/school_subject_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_block_height"
+        android:layout_marginLeft="@dimen/register_nick_block_margin_left"
+        android:layout_marginRight="@dimen/register_nick_block_margin_left"
+        android:layout_below="@id/school_choose_block">
+        
+		<View 
+		    android:id="@+id/school_subject_line"
+			android:layout_width="match_parent"
+            android:layout_height="@dimen/register_nick_block_bg"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/register_nick_line_default"/>
+        
+		<TextView 
+            android:id="@+id/school_subject_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:text="@string/school_verify_subject_text"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+        
+        <EditText
+            android:id="@+id/school_subject_content"
+            style="@style/login.edittext.style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/register_nick_content_margin_left"
+            android:layout_toRightOf="@id/school_subject_text"
+            android:hint="@string/school_verify_subject_hint_text"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:singleLine="true"
+            android:textColor="@color/register_nick_text_color"
+            android:textColorHint="@color/register_nick_content_hint_text_color"
+            android:textSize="@dimen/register_nick_text_size" />
+
+    </RelativeLayout>
+    
+	<RelativeLayout 
+        android:id="@+id/school_gender_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_block_height"
+        android:layout_marginLeft="@dimen/register_nick_block_margin_left"
+        android:layout_marginRight="@dimen/register_nick_block_margin_left"
+        android:layout_below="@id/school_subject_block">
+        
+		<View 
+		    android:id="@+id/school_gender_line"
+			android:layout_width="match_parent"
+            android:layout_height="@dimen/register_nick_block_bg"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/register_nick_line_default"/>
+        
+		<TextView 
+            android:id="@+id/school_gender_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:text="@string/school_verify_gender_text"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+
+		<TextView 
+            android:id="@+id/school_gender_girl_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_content_margin_left"
+            android:layout_toRightOf="@id/school_gender_text"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:drawableLeft="@drawable/school_gender_girl_bg"
+            android:drawablePadding="@dimen/school_verify_gender_girl_margin_left"
+            android:text="@string/school_verify_gender_girl"
+            android:textColor="@color/register_nick_content_hint_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+				
+		<TextView 
+            android:id="@+id/school_gender_man_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/school_verify_gender_man_margin_right"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:drawableLeft="@drawable/school_gender_man_bg"
+            android:drawablePadding="@dimen/school_verify_gender_girl_margin_left"
+            android:text="@string/school_verify_gender_man"
+            android:textColor="@color/register_nick_content_hint_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+		
+    </RelativeLayout>
+	
+	<TextView 
+	    android:id="@+id/school_description"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:gravity="center_horizontal"
+	    android:layout_marginLeft="@dimen/shcool_verify_description_margin_right_left"
+	    android:layout_marginRight="@dimen/shcool_verify_description_margin_right_left"
+	    android:layout_below="@id/school_gender_block"
+	    android:layout_marginTop="@dimen/school_verify_description_margin_top"
+	    android:text="@string/school_verify_description"
+	    android:textColor="@color/login_zhanghao_hint_color"
+	    android:textSize="@dimen/school_verify_description_text_size"/>
+	
+	<Button
+        android:id="@+id/school_description_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_black_bg_heigth"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginRight="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginTop="@dimen/register_button_margin_top"
+        android:background="@drawable/register_button_pre"
+        android:gravity="center"
+        android:text="@string/school_verify_next"
+        android:textColor="@color/title_content_textcolor"
+        android:textSize="@dimen/register_nick_text_size" />
+	
+</RelativeLayout>

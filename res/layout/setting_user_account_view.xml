@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color">
+    
+	<include 
+		android:id="@+id/setting_about_title"
+        layout="@layout/title_view"
+        android:layout_alignParentTop="true"/>
+    
+	<RelativeLayout 
+	    android:id="@+id/setting_zhanghao_block"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/setting_about_account_up_block_height"
+	    android:layout_below="@id/setting_about_title">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/setting_about_account_text"
+	        android:textColor="@color/setting_about_account_textcolor"
+	        android:textSize="@dimen/setting_about_account_textsize"
+	        android:layout_marginTop="@dimen/setting_about_account_text_margintop"
+	        android:layout_marginLeft="@dimen/setting_about_account_text_marginleft"/>
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/setting_account_block"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/setting_content_block_height"
+	    android:layout_below="@id/setting_zhanghao_block"
+	    android:background="@drawable/main_ui_listitem_bg">
+
+	    <TextView 
+	        android:id="@+id/setting_about_account_phone_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/setting_about_account_phone_marginleft"
+	        android:text="@string/setting_about_account_phone"
+	        android:textColor="@color/setting_about_account_phone"
+	        android:textSize="@dimen/setting_about_account_phone_size"/>
+	    
+	    <TextView 
+	        android:id="@+id/setting_about_account_phone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="@dimen/setting_about_account_phone_marginleft"
+	        android:text="@string/setting_about_accoutn_phone_number"
+	        android:textColor="@color/setting_about_account_phone"
+	        android:textSize="@dimen/setting_about_account_phone_size"/>
+	    
+		<TextView 
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:layout_marginLeft="@dimen/setting_content_line_padding_left_right"
+			android:layout_marginRight="@dimen/setting_content_line_padding_left_right"
+			android:layout_alignParentBottom="true"
+			android:background="@color/main_ui_line_color"/>
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/setting_account_cajian_block"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/setting_content_block_height"
+	    android:layout_below="@id/setting_account_block"
+	    android:background="@drawable/main_ui_listitem_bg">
+
+	    <TextView 
+	        android:id="@+id/setting_about_account_cajian_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/setting_about_account_phone_marginleft"
+	        android:text="@string/setting_about_account_cajian"
+	        android:textColor="@color/setting_about_account_phone"
+	        android:textSize="@dimen/setting_about_account_phone_size"/>
+	    
+	    <TextView 
+	        android:id="@+id/setting_about_account_cajian"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="@dimen/setting_about_account_phone_marginleft"
+	        android:text="@string/setting_about_accoutn_cajian_number"
+	        android:textColor="@color/setting_about_account_phone"
+	        android:textSize="@dimen/setting_about_account_phone_size"/>
+	    
+	</RelativeLayout>
+	
+	<!--  -->
+	
+	<RelativeLayout 
+	    android:id="@+id/setting_security_block"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/setting_about_account_up_block_height"
+	    android:layout_below="@id/setting_account_cajian_block">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/setting_about_security_text"
+	        android:textColor="@color/setting_about_account_textcolor"
+	        android:textSize="@dimen/setting_about_account_textsize"
+	        android:layout_marginTop="@dimen/setting_about_account_text_margintop"
+	        android:layout_marginLeft="@dimen/setting_about_account_text_marginleft"/>
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/setting_account_security_block"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/setting_content_block_height"
+	    android:layout_below="@id/setting_security_block"
+	    android:background="@drawable/main_ui_listitem_bg">
+
+	    <TextView 
+	        android:id="@+id/setting_about_security_phone_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/setting_about_account_phone_marginleft"
+	        android:text="@string/setting_about_security_password"
+	        android:textColor="@color/setting_about_account_phone"
+	        android:textSize="@dimen/setting_about_account_phone_size"/>
+	    
+		<TextView 
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:layout_marginLeft="@dimen/setting_content_line_padding_left_right"
+			android:layout_marginRight="@dimen/setting_content_line_padding_left_right"
+			android:layout_alignParentBottom="true"
+			android:background="@color/main_ui_line_color"/>
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:id="@+id/setting_exit_block"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/setting_content_block_height"
+	    android:layout_below="@id/setting_account_security_block"
+	    android:background="@drawable/main_ui_listitem_bg">
+
+	    <TextView 
+	        android:id="@+id/setting_about_security_cajian_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/setting_about_account_phone_marginleft"
+	        android:text="@string/setting_about_security_exit"
+	        android:textColor="@color/setting_about_account_phone"
+	        android:textSize="@dimen/setting_about_account_phone_size"/>
+	    
+	</RelativeLayout>
+	
+</RelativeLayout>

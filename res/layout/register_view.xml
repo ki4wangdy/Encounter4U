@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color">
+
+    <include 
+        android:id="@+id/register_title"
+        layout="@layout/title_view"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView 
+        android:id="@+id/register_photo"
+        android:layout_below="@id/register_title"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/register_photopicker_width_height"
+        android:layout_height="@dimen/register_photopicker_width_height"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"
+        android:src="@drawable/register_photo_bg"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/register_photo_margin_top_right"
+        android:layout_marginRight="@dimen/register_photo_margin_top_right"/>
+
+    <RelativeLayout 
+        android:id="@+id/register_nick_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_nick_block_height"
+        android:layout_marginLeft="@dimen/register_nick_block_margin_left"
+        android:layout_toLeftOf="@id/register_photo"
+        android:layout_alignBottom="@id/register_photo">
+        <View 
+            android:id="@+id/register_nick_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_nick_block_bg"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/register_nick_block_bg"/>
+        
+        <TextView 
+            android:id="@+id/register_nick_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:text="@string/register_nick_text"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+        
+        <EditText 
+            android:id="@+id/register_nick_content"
+            style="@style/login.edittext.style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_content_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/register_nick_text"
+            android:inputType="text"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:hint="@string/register_nick_content_hint_text"
+            android:textColorHint="@color/register_nick_content_hint_text_color"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/register_account_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_block_height"
+        android:layout_marginLeft="@dimen/register_nick_block_margin_left"
+        android:layout_marginRight="@dimen/register_nick_block_margin_left"
+        android:layout_below="@id/register_nick_block">
+        
+		<View 
+		    android:id="@+id/register_account_line"
+			android:layout_width="match_parent"
+            android:layout_height="@dimen/register_nick_block_bg"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/register_nick_line_default"/>
+        
+        <ImageView 
+            android:id="@+id/register_delete_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:visibility="invisible"
+            android:src="@drawable/register_delete_icon_bg"/>
+        
+		<TextView 
+            android:id="@+id/register_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:text="@string/login_zhanghao"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+        
+        <EditText 
+            android:id="@+id/register_account_content"
+            style="@style/login.edittext.style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_content_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/register_account_text"
+            android:inputType="text"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:layout_toLeftOf="@id/register_delete_icon"
+            android:hint="@string/register_account_content_hint_text"
+            android:textColorHint="@color/register_nick_content_hint_text_color"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/register_password_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_block_height"
+        android:layout_marginLeft="@dimen/register_nick_block_margin_left"
+        android:layout_marginRight="@dimen/register_nick_block_margin_left"
+        android:layout_below="@id/register_account_block">
+        
+		<View 
+		    android:id="@+id/register_password_line"
+			android:layout_width="match_parent"
+            android:layout_height="@dimen/register_nick_block_bg"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/register_nick_line_default"/>
+        
+        <ImageView 
+            android:id="@+id/register_password_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@drawable/register_password_bg"/>
+        
+		<TextView 
+            android:id="@+id/register_password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:text="@string/login_password"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+        
+        <EditText 
+            android:id="@+id/register_password_content"
+            style="@style/login.edittext.style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_content_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/register_password_text"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_toLeftOf="@id/register_password_icon"
+            android:hint="@string/register_password_content_hint_text"
+            android:textColorHint="@color/register_nick_content_hint_text_color"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+    </RelativeLayout>
+    
+	<Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_black_bg_heigth"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginRight="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginTop="@dimen/register_button_margin_top"
+        android:background="@drawable/register_button_pre"
+        android:gravity="center"
+        android:text="@string/register_register_text"
+        android:textColor="@color/title_content_textcolor"
+        android:textSize="@dimen/register_nick_text_size" />
+    
+	<TextView 
+	    android:id="@+id/register_text_content"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/register_button"
+	    android:layout_centerHorizontal="true"
+	    android:singleLine="true"
+	    android:layout_marginTop="@dimen/register_text_margin_top"
+	    android:text="@string/register_text_content"
+	    android:textColor="@color/login_zhanghao_hint_color"
+	    android:textSize="@dimen/login_thirtparty_textview_size"/>
+	
+</RelativeLayout>

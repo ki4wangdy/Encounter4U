@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color">
+    
+	<include 
+		android:id="@+id/setting_cajiansetting_detail_title"
+		layout="@layout/title_view"
+        android:layout_alignParentTop="true"/>
+
+	<ViewStub 
+	    android:id="@+id/setting_cajiansetting_default_loading"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout="@layout/setting_auth_loading_view"
+	    android:layout_below="@id/setting_cajiansetting_detail_title"/>
+	
+	<ViewStub 
+	    android:id="@+id/setting_cajiansetting_empty_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout="@layout/setting_auth_view"
+	    android:layout_below="@id/setting_cajiansetting_detail_title"/>
+	
+	<TextView 
+	    android:id="@+id/setting_cajiansetting_detail_header"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:visibility="invisible"
+	    android:lineSpacingExtra="@dimen/setting_cajiansetting_detail_line_extra"
+	    android:layout_below="@id/setting_cajiansetting_detail_title"
+	    android:text="@string/setting_cajiansetting_detail_text"
+	    android:textColor="@color/photopicker_list_item_number_color"
+	    android:textSize="@dimen/setting_notification_notburd_content_textsize"
+	    android:paddingTop="@dimen/setting_cajiansetting_detail_padding_top"
+	    android:paddingLeft="@dimen/setting_cajiansetting_detail_padding_left"
+	    android:paddingRight="@dimen/setting_cajiansetting_detail_padding_left"
+	    android:paddingBottom="@dimen/setting_cajiansetting_detail_padding_left"/>
+	
+	<ListView 
+	    android:id="@+id/setting_cajiansetting_detail_listview"
+	    android:layout_below="@id/setting_cajiansetting_detail_header"
+	    android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:visibility="invisible"
+        android:fadingEdge="none"
+        android:scrollbars="@null"
+        android:divider="@color/main_ui_line_color"
+		android:dividerHeight="1px"
+        android:listSelector="@drawable/main_ui_listitem_bg"/>
+	
+</RelativeLayout>

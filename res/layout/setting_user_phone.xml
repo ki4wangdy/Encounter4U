@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color">
+    
+    <include 
+		android:id="@+id/setting_phone_title"
+        layout="@layout/title_view"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView 
+        android:id="@+id/setting_phone_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_phone_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/setting_phone_margin_top"
+        android:contentDescription="@null"
+        android:src="@drawable/setting_phone"/>
+
+    <RelativeLayout 
+        android:id="@+id/setting_phone_middle_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_phone_imageview"
+        android:layout_marginTop="@dimen/setting_phone_margin_top"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+        <TextView 
+            android:id="@+id/setting_phone_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_phone_text1"
+            android:textSize="@dimen/setting_phone_text1_size"
+            android:textColor="@color/setting_phone_text_size"/>
+        <TextView 
+            android:id="@+id/setting_phone_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_phone_text2"
+            android:textColor="@color/setting_phone_text_size"
+            android:textSize="@dimen/setting_phone_text1_size"
+            android:layout_toRightOf="@id/setting_phone_text1"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/setting_phone_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_black_bg_heigth"
+        android:layout_below="@id/setting_phone_middle_block"
+        android:layout_marginLeft="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginRight="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginTop="@dimen/setting_phone_button_margin_top"
+        android:background="@drawable/register_button_bg"
+        android:gravity="center"
+        android:text="@string/setting_phone_text3"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/login_login_text_size" />    
+    
+</RelativeLayout>

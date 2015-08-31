@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/activity_background_color">
+
+    <include
+        android:id="@+id/mail_verify_title"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_view" />
+
+    <TextView 
+        android:id="@+id/mail_verify_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/phone_verify_content_margin_top"
+        android:layout_below="@id/mail_verify_title"
+        android:text="@string/phone_verify_content"
+        android:textColor="@color/phone_verify_content_text_color"
+        android:textSize="@dimen/phone_verify_content_textsize"/>
+    
+    <TextView 
+        android:id="@+id/mail_verify_mail_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail_verify_content"
+        android:layout_marginTop="@dimen/phone_verify_content_number_margin_top"
+        android:layout_centerHorizontal="true"
+        android:text="@string/mail_verify_mail_address"
+        android:textColor="@color/phone_verify_content_number_text_color"
+        android:textSize="@dimen/phone_verify_content_textsize"/>
+    
+    <RelativeLayout 
+        android:id="@+id/mail_verify_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phone_verify_block_height"
+        android:layout_below="@id/mail_verify_mail_address"
+        android:layout_marginTop="@dimen/phone_verify_block_margin_top_"
+        android:layout_marginLeft="@dimen/register_nick_block_margin_left"
+        android:layout_marginRight="@dimen/register_nick_block_margin_left">
+        
+        <View 
+            android:id="@+id/mail_verify_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_nick_block_bg"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/register_nick_block_bg"/>
+        
+        <TextView 
+            android:id="@+id/mail_verify_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:text="@string/phone_verify_block_text"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+        
+        <EditText 
+            android:id="@+id/mail_verify_edittext"
+            style="@style/login.edittext.style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_content_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/mail_verify_text"
+            android:inputType="number"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:hint="@string/phone_verify_hint_text"
+            android:textColorHint="@color/register_nick_content_hint_text_color"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/mail_verify_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail_verify_block"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/phone_verify_time_text_margin_top"
+        android:text="@string/phone_verify_time_text"
+        android:textColor="@color/phone_verify_time_text_color"
+        android:textSize="@dimen/phone_verify_time_text_size"/>
+    
+    <TextView 
+        android:id="@+id/mail_verify_time_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail_verify_block"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/phone_verify_time_text_margin_top"
+        android:text="@string/mail_verify_resend_text"
+        android:textColor="@color/phone_verify_content_text_color"
+        android:textSize="@dimen/phone_verify_time_text_size"/>
+
+    <TextView 
+        android:id="@+id/mail_verify_time_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mail_verify_time_over"
+		android:layout_below="@id/mail_verify_block"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/phone_verify_time_text_margin_top"
+        android:text="@string/phone_verify_time_over_text"
+        android:textColor="@color/phone_verify_content_text_color"
+        android:textSize="@dimen/phone_verify_time_text_size"/>
+    
+    <Button
+        android:id="@+id/mail_verify_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_black_bg_heigth"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginRight="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginTop="@dimen/register_button_margin_top"
+        android:background="@drawable/register_button_pre"
+        android:gravity="center"
+        android:text="@string/phone_verify_last_text"
+        android:textColor="@color/title_content_textcolor"
+        android:textSize="@dimen/register_nick_text_size" />
+    
+    
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dialog_loading_content_margin_left_right"
+    android:paddingRight="@dimen/dialog_loading_content_margin_left_right"
+    android:background="@drawable/dialog_bg">
+    
+    <TextView 
+        android:id="@+id/loading_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/loading_textview_margin_top"
+        android:textSize="@dimen/login_login_text_size"
+        android:textColor="@color/title_content_textcolor"
+        android:text="@string/loading_textview_text"/>
+
+    <ImageView 
+        android:id="@+id/loading_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loading_content"
+        android:layout_marginTop="@dimen/loading_imageview_margin_top"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:src="@drawable/loading_anim"/>
+    
+</RelativeLayout>

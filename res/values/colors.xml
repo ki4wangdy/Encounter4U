@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="activity_item_bg">#e5e5e5</color>
+    <color name="activity_progress_bar_text">#888888</color>
+    
+    <!-- 页面背景色 -->
+    <color name="activity_background_color">#f5f0eb</color>
+    
+    <color name="login_zhanghao_textview_color">#e63922</color>
+    <color name="login_zhanghao_hint_color">#b5b5b5</color>
+    
+    <color name="login_forget_text_color">#f5f8f9</color>
+	<color name="login_forget_text_pressed">#d1341f</color>
+    
+    <color name="login_thirtparty_textview_color">#922111</color>
+    <color name="login_edittext_color">#e63922</color>
+    <color name="login_thirdparty_qq_text_color">#ffffff</color>
+    
+    <!-- System Title -->
+    <color name="title_bg_color">#e63922</color>
+    <color name="title_content_textcolor">#ffffff</color>
+	<color name="tilte_line_bg">#d1341f</color>
+
+	<!-- 注册页 -->
+	<color name="register_nick_text_color">#000000</color>
+	<color name="register_nick_content_hint_text_color">#b5b5b5</color>
+	
+	<color name="register_bottom_text_part_color">#00479d</color>
+	<color name="register_delete_icon_hover">#d4cfc8</color>
+
+	<!-- Common Dialog -->
+	<color name="dialog_title_textcolor">#e63922</color>
+	<color name="dialog_line_color">#bcbcbc</color>	
+	
+	<color name="dialog_confirm_block_line_color">#d6d6d6</color>
+	<color name="dialog_confirm_cancel_color">#000000</color>
+	<color name="dialog_confirm_ok_color">#000000</color>
+	<color name="dialog_reply_text_color">#888888</color>
+	<color name="dialog_reply_textcolor">#e63922</color>
+	
+	<color name="dialog_confirm_hover_color">#f2f2f2</color>
+	
+	<!-- 手机验证码页 -->
+	<color name="phone_verify_content_text_color">#b5b5b5</color>
+	<color name="phone_verify_content_number_text_color">#000000</color>
+	
+	<color name="phone_verify_time_text_color">#666666</color>
+	<color name="phone_verify_time_over_text_color">#00479d</color>
+	
+	<color name="phone_verify_timer_over_click_color">#8799bf</color>
+	
+	<!-- Main UI -->
+	<color name="main_ui_bantouming_color">#4b000000</color>
+
+	<!-- Main UI Header -->	    
+	<color name="main_ui_header_bg">#ffeeee</color>
+	<color name="main_ui_header_text_color">#888888</color>
+	
+	<color name="main_ui_line_color">#dfdad3</color>
+	<color name="main_ui_name_color">#000000</color>
+	
+	<color name="main_ui_encounter_color">#888888</color>
+	<color name="main_ui_chat_content_color">#576b95</color>
+	<color name="main_ui_chat_time_bg">#d4d4d4</color>
+	<color name="main_ui_chat_bg">#f5f0eb</color>
+	
+	<!-- User Info Detail UI -->
+	<color name="detail_upper_block_bg">#ebebeb</color>
+	<color name="detail_user_id">#aaaaaa</color>
+	
+	<color name="detail_send_button">#5e5e5e</color>
+	<color name="detail_qiuknow_textcolor">#353535</color>
+	
+	<color name="detail_middle_textcolor">#aaaaaa</color>		
+	<color name="detail_viewpager_left_textcolor">#353535</color>
+	
+	<color name="detail_viewpager_line">#dadada</color>
+	<color name="detail_viewpager_left_text_color">#888888</color>
+	
+	<color name="detail_reply_block_line">#dedede</color>
+	<color name="detail_reply_text_color">#888888</color>
+	<color name="detail_reply_button_textcolor">#353535</color>
+	<color name="detail_reply_text">#bebebe</color>
+		
+	<!-- chat room -->
+	<color name="chat_room_time_color">#d4d4d4</color>
+	<color name="chat_room_text_color">#353535</color>
+	
+	<!-- Adrr list -->
+	<color name="addrlist_alph_color">#f5f0eb</color>
+	<color name="addrlist_add_newfriend">#ffffff</color>
+	<color name="addrlist_add_newfriend_bg">#d1341f</color>	
+	<color name="addrlist_new_addfriend">#ffffff</color>
+	<color name="addrlist_new_addfriend_hint">#c52f1b</color>
+	
+	<color name="addrlist_result_text">#3fb838</color>
+	<color name="addrlist_new_addriend_default">#ffffff</color>
+	<color name="addrlist_new_addriend_see">#f5fff1</color>
+	
+	<!-- Photo Picker -->
+	<color name="photopicker_list_item_title_color">#353535</color>
+	<color name="photopicker_list_item_number_color">#888888</color>
+
+	<color name="photopicker_title_button_text">#5e5e5e</color>
+
+	<!-- Setting -->
+	<color name="setting_user_name">#353535</color>
+	<color name="setting_user_gexing">#aaaaaa</color>		
+
+	<color name="setting_usr_cajianstting_text">#353535</color>
+	<color name="setting_user_cajiansetting_sex_text">#f6aa00</color>		
+	<color name="setting_user_cajiansetting_item_name">#5e5e5e</color>
+	
+	<color name="setting_about_newversion">#ff0000</color>
+	<color name="setting_about_account_textcolor">#888888</color>
+	<color name="setting_about_account_phone">#353535</color>
+	
+	<color name="setting_auth_text_color">#888888</color>
+	
+	<color name="setting_about_resetpassword">#aaaaaa</color>
+	<color name="setting_about_resetpassword_text1">#888888</color>
+	<color name="setting_about_new_password_text">#353535</color>
+	
+	<color name="setting_phone_text_size">#353535</color>
+	<color name="setting_phone_ui_text">#aaaaaa</color>
+	
+	<!-- yuanfen circle -->
+	<color name="yuanfencircle_header_nickname">#ffffff</color>
+	<color name="yuanfencircle_header_dongtai">#a8a6a3</color>	
+
+	<color name="yuanfencircle_content_no_text">#8b939d</color>
+	<color name="yuanfencircle_content_no_button_textcolor">#464d6b</color>
+		
+	<color name="yuanfencircle_content_user_name">#000000</color>
+	<color name="yuanfencircle_content_user_time">#90949f</color>
+
+	<color name="yuanfencircle_content_user_zan_text">#576b95</color>
+	<color name="yuanfencircle_content_user_zan_final">#000000</color>
+
+	<color name="yuanfencircle_content_comment_dy_text">#888888</color>
+	<color name="yuanfencircle_content_content_text">#000000</color>
+	
+	<color name="yuanfencircle_line">#e5e5e8</color>
+	<color name="yuanfencircle_listitem_bg_color">#ffffff</color>
+	
+	<color name="yuanfencircle_blow_block">#f9fafc</color>
+				
+</resources>

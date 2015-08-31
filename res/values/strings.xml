@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">擦肩</string>
+    <string name="action_settings">Settings</string>
+	<string name="activity_progress_bar_text">正在加载</string>
+    
+    <string name="newguid_pass">跳过 </string>
+    
+    <string name="login_zhanghao">账号</string>
+    <string name="login_zhanghao_hint">请输入注册的手机号或邮箱</string>
+    
+    <string name="login_password">密码</string>
+    <string name="login_password_hint">请输入密码</string>
+    
+    <string name="login_forget_text">忘记密码？</string>
+    <string name="login_login_text">登录</string>
+    
+    <string name="login_signup_text">快速注册</string>
+    <string name="login_thirtparty_content">可以用以下方式登录</string>
+    
+    <string name="login_thirtparty_renren_textview">人人登录</string>
+    <string name="login_thritparty_qq_textview">QQ登录</string>
+    
+    <string name="login_thritparty_weibo_textview">新浪微博登录</string>
+    <string name="login_verification_ing">正在验证用户名密码</string>
+    <string name="login_username_password_error">用户名或密码错误，请重新输入！</string>
+    <string name="login_get_friend_info">获取好友信息</string>
+    <string name="login_get_user_info">获取用户信息</string>
+
+    <string name="login_get_friend">获取好友列表</string>
+    
+    <!-- System Title -->
+    <string name="title_title_content">加入擦肩</string>
+
+    <!-- 注册页 -->
+    <string name="register_nick_text">昵称</string>
+    <string name="register_nick_content_hint_text">例如：清嘉</string>
+    <string name="register_password_content_hint_text">设置至少六位密码</string>
+    
+    <string name="register_account_content_hint_text">手机号（更快捷）或邮箱</string>
+	<string name="register_register_text">注册</string>
+	
+	<string name="register_text_content">点击“注册”意味着你同意擦肩的《使用协议》哦！</string>
+	<string name="register_text_content_part1">点击“注册”意味着你同意擦肩的</string>
+	<string name="register_text_content_part2">《使用协议》</string>
+	<string name="register_text_content_part3">哦！</string>
+	
+	<string name="register_delete_icon_tag">tag</string>
+	<string name="register_network_off">当前网络不可用，请检查网络设置</string>
+	<string name="register_phone_error">手机号码错误</string>
+	<string name="register_mail_error">邮箱地址错误</string>
+	<string name="register_mail_content">你输入的是一个无效的邮箱地址，请更正！</string>
+	<string name="register_phone_error_content">你输入的是一个无效的手机号码，请更正！</string>
+	
+	<string name="register_mail_send_ing">正在发送验证码到邮箱，请等候</string>
+	<string name="register_phone_send_ing">正在发送验证码到手机，请等候</string>
+	<string name="register_check_verification_code">正在检验该验证码</string>
+	
+	<!-- Loading View -->
+	<string name="loading_textview_text">正在验证手机号</string>
+	<string name="loading_textview_text_mail">正在验证邮箱</string>
+	<string name="loading_textview_for_mail">正在发送验证码到邮箱，请稍等</string>
+
+	<!-- Common Dialog -->
+	<string name="dialog_common_title">确认手机号码</string>
+	<string name="dialog_reply_title">回复</string>
+	<string name="dialog_modify_account_password">为保障你的数据安全，修改密码前请填写原密码。</string>
+	<string name="dialog_confirm_mail_title">确认邮箱地址</string>
+	<string name="dialog_confirm_cancel">取消</string>
+	<string name="dialog_confirm_ok">确定</string>
+	
+	<string name="dialog_reply_textlimit">50</string>
+	<string name="dialog_reply_edittext">真的挺好的，来点长的，看看效果如何哈，真的要这么长么</string>
+	
+	<string name="dialog_confirm_mail_registered">该邮箱地址已经注册擦肩，是否直接登录？</string>
+	<string name="dialog_confirm_phone_registered">该手机号已经注册擦肩，是否直接登录？</string>
+	
+	<string name="dialog_confirm_phone_text">我们将发送验证码短信到这个号码：</string>
+	<string name="dialog_confirm_mail_text">我们将发送验证码到这个邮箱地址：</string>
+	<string name="dialog_confirm_phone">18311256785</string>
+	
+	<string name="dialog_one_content">该手机号已经注册擦肩，是否直接登录？</string>
+	<string name="dialog_no_avail_phone">您输入的是一个无效的手机号码，请更改！</string>		
+	<string name="dialog_not_support_phone">现在暂时不支持手机验证！</string>
+	<string name="dialog_error_json">服务器发生错误，抱歉~~~</string>
+	<string name="dialog_error_phoneormail">验证手机号或邮箱错误！</string>
+	<string name="dialog_error_phone">手机号码错误</string>
+
+	<!-- 手机号注册验证界面 -->
+	<string name="phone_verify_title">手机验证码</string>	
+	<string name="phone_verify_content">我们已经发送验证码到你的手机：</string>
+	<string name="phone_verify_block_text">验证码</string>
+	<string name="phone_verify_hint_text">输入验证码</string>
+	
+	<string name="phone_verify_time_text">%1$s秒后点击重新发送</string>
+	<string name="phone_verify_time_over_text">重新发送</string>
+	
+	<string name="phone_verify_last_text">还差一步，Go</string>
+	<string name="phone_verify_part_1">我们已经发送</string>
+	<string name="phone_verify_part_3">到你的手机：</string>
+
+	<string name="phone_verify_error_code">验证码不正确，请重新输入</string>
+	<string name="phone_verify_back_text">验证码短信可能会有所延迟，确定取消并重新发送？</string>		
+	
+	<string name="phone_verify_back_cancel_text">等待</string>
+	<string name="phone_verify_back_ok_text">重新开始</string>
+	
+	<!-- 邮件验证页 -->
+	<string name="mail_verify_title">查收确认信</string>
+	<string name="mail_verify_mail_address">wusongtao@live.cn</string>
+
+	<string name="mail_verify_resend_text">去邮箱查看邮件，若没收到请点击</string>
+	
+	<string name="mail_verify_part_1">我们已经发送</string>
+	<string name="mail_verify_part_3">到你的邮箱：</string>
+	
+	<string name="mail_verify_back_text">验证码已发邮箱啦，取验证码的过程请保持此页或按HOME键。</string>
+	<string name="mail_verify_back_cancel_text">保持此页</string>
+	<string name="mail_verify_back_ok_text">重新开始</string>
+	
+	<string name="mail_verify_error_code">验证码不正确，请重新输入</string>
+	
+	<string name="mail_verify_resend_text_part_1">去邮箱查看邮件，若没收到请点击</string>
+	<string name="mail_verify_resend_text_part_2">重新发送</string>
+	
+	<!-- 学校验证页 -->
+	<string name="school_verify_school_text">学校</string>
+	<string name="school_verify_school_hint_text">选择我的学校</string>
+	
+	<string name="school_verify_subject_text">学科</string>
+	<string name="school_verify_subject_hint_text">选择我的学科（文、理、工）</string>
+
+	<string name="school_verify_gender_text">性别</string>
+	<string name="school_verify_gender_girl">女</string>
+	<string name="school_verify_gender_man">男</string>
+
+	<string name="school_verify_description">性别一旦设定，将不能再更改哦！其它性别的同学请进官方QQ群向产品经理反馈~</string>
+	<string name="school_verify_information">学校信息认证</string>
+
+	<string name="school_verify_next">开启浪漫之旅</string>
+	<string name="school_register_ing">正在注册用户信息</string>
+
+	<!-- 其他信息 -->
+	<string name="error_json_parse">json解析错误</string>
+	<string name="error_server_parse">账号错误</string>
+	<string name="error_sendcode">发送验证码错误</string>
+	<string name="error_json_error">解析错误</string>
+	<string name="error_login">登录错误</string>
+	<string name="error_verification_code_error">验证码错误，请重新输入</string>
+	<string name="error_verification_time_out">验证码过期，请重新发送</string>
+	<string name="error_verification_title">验证码</string>
+	<string name="error_forget_pw">邮箱或手机号错误，请重新输入</string>
+	<string name="error_forget_reset">重新设置密码失败，请重新设置</string>
+	
+	<!-- 忘记密码 -->
+	<string name="forget_pw_title">找回密码</string>
+	<string name="forget_pw_content">请输入注册的手机号或邮箱</string>
+
+	<string name="forget_pw_part1">请输入注册的</string>
+	<string name="forget_pw_part2">手机号</string>
+	<string name="forget_pw_part3">或</string>
+	<string name="forget_pw_part4">邮箱</string>
+		
+	<string name="forget_pw_next">下一步</string>
+	<string name="forget_newpw_content">请输入6位或6位以上新密码</string>
+
+	<string name="forget_newpw_hint">输入6位以上数字或字符</string>
+	<string name="forget_renewpw_again">再输入一次新密码</string>
+	<string name="forget_newpw_text">新密码</string>
+	<string name="forget_renewpw_text">确认新密码</string>
+	<string name="forget_renewpw_complish">完成</string>
+	
+	<string name="forget_renewpw_part1">请输入6位或6位以上</string>
+	<string name="forget_renewpw_part2">新密码</string>
+	<string name="forget_resetpw_ing">正在重新设置密码</string>
+
+	<string name="forget_newpw_error">密码错误</string>
+	<string name="forget_newpw_content_">两个密码不一致，请重新输入</string>
+		
+	<string name="forget_modify_success">修改成功，请重新登录</string>
+	<string name="forget_modify_error">修改密码失败，请重新输入密码</string>
+	<string name="forget_send_mail_phone">发送失败，请重新输入邮箱或者手机号</string>
+
+	<!-- Main UI Header -->
+	<string name="main_ui_header_content">当前网络不可用，请检查网络设置。</string>
+	<string name="main_ui_header_content_wlan">为了记录遇到的TA，请保持WLAN开启哦。</string>
+	<string name="main_ui_header_content_material">完善资料，别让擦肩而过变成继续错过。</string>	
+
+	<string name="main_ui_center_text1">暂无擦肩记录</string>
+	<string name="main_ui_center_text2">校园走一走，相遇自然有</string>
+	<string name="main_ui_center_text3">随机聊</string>
+	<string name="main_ui_center_text4">走出去</string>
+	<string name="main_ui_center_text5">才有 The Right One</string>
+	
+	<string name="main_ui_name">卿家</string>
+	<string name="main_ui_encounter">已相遇%d次</string>
+	<string name="main_ui_signature">动漫控的世界你不会懂。</string>
+	
+	<string name="main_ui_encounter_time">%s相遇</string>
+
+	<string name="main_ui_title_cajian">擦肩</string>
+	<string name="main_ui_title_tongxunlu">通讯录</string>
+	<string name="main_ui_title_chat">聊天</string>
+	<string name="main_ui_title_yuanfen">缘分</string>
+	<string name="main_ui_title_setting">设置</string>
+
+	<string name="main_ui_chat_icon_number">%d</string>
+	<string name="main_ui_chat_title_cotent">青衫</string>
+	<string name="main_ui_chat_content">今天是个好天气，我觉得要字符串很长才行，要不然测试不出来</string>
+	<string name="main_ui_chat_time">%s</string>
+		
+	<string name="main_ui_cajian_notwifi_text">为了记录遇到的TA，请保持WLAN开启哦。</string>
+	<string name="main_ui_cajian_notlogo_text">完善资料，别让擦肩而过变成继续错过。</string>
+	
+	<!-- Detail User Info UI -->
+	<string name="detail_user_name">机械 余未</string>
+	<string name="detail_user_uid">擦肩号：%d</string>
+	<string name="detail_user_nickname">昵称：%s</string>
+	<string name="detail_cajian_record">擦肩记录</string>		
+	<string name="detail_detail_info">详细资料</string>
+
+	<string name="detail_send">发送</string>
+	<string name="detail_real_text">写出真诚的文字，是一个良好的交友开端！</string>
+	
+	<string name="detail_viewpager_left_text1">你们还没有相遇过</string>
+	<string name="detail_viewpager_left_text2">你可以设置 “相遇提醒我” ，抓住不期的相遇</string>
+	
+	<string name="detail_reply_text_content">我：你哪个专业的呀，空间怎么都是空的？</string>
+	<string name="detail_reply_text_content1">我：%s</string>
+	<string name="detail_reply_text_content2">你哪个专业的呀，空间怎么都是空的？</string>
+	<string name="detail_reply_text_content3">挺烦你的，别理我了啊</string>
+	<string name="detail_reply_text_huifu">回复</string>
+
+	<string name="detail_reply_requesting">正在发送回复</string>
+	<string name="detail_reply_error">发送失败</string>
+	<string name="detail_reply_success">发送成功</string>
+	<string name="detail_reply_add_success">添加好友成功，开始进行对话吧~</string>	
+	
+	<string name="detail_faqi_chat">发起聊天</string>	
+	<string name="detail_qiuknow_null">请填写发送的请求</string>
+	<string name="detail_qiuknow_send_msg">正在处理</string>
+	<string name="detail_qiuknow_send_success">发送成功</string>
+	<string name="detail_qiuknow_send_error">发送失败</string>
+	
+	<string name="detail_viewpager_left_text">个性签名</string>
+	
+	<string name="detail_viewpager_left_conetnt">打开电视，雨雨雨，多少相思泪</string>	
+	<string name="detail_viewpager_left_photos">个人动态</string>
+	<string name="detail_viewpager_xingzuo">星座</string>
+	<string name="detail_viewpager_birth">生日</string>
+	<string name="detail_viewpager_school">学校</string>
+	<string name="detail_viewpager_class">班级</string>
+	<string name="detail_viewpager_hometown">家乡</string>	
+	
+	<string name="detail_viewpager_xingzuo_content">水瓶座</string>
+	<string name="detail_viewpager_birth_content">10月1日</string>
+	<string name="detail_viewpager_school_content">哈佛大学</string>
+	<string name="detail_viewpager_class_content">计算机1014班</string>
+	<string name="detail_viewpager_hometown_content">美国</string>
+
+	<string name="detail_viewpager_time">8月8号 09:17</string>
+	<string name="detail_viewpager_left_count">第%d次相遇</string>	
+
+	<string name="service_push_name">IMPush</string>
+	<string name="service_wifi_net">Wifi_Broadcast</string>
+	
+	<string name="thread_unexception_error">很抱歉，程序出现异常，即将退出</string>
+	
+	<!-- Chat Room -->
+	<string name="chat_room_send">发送</string>
+	<string name="chat_room_time">12月11日 下午15:40</string>
+			
+	<string name="chat_room_left_content">今天的天气真是太好了，哈哈，字符串的长度要是很长很长的说,这样的结果不是很满意的说</string>
+	
+	<!-- Addrlist -->
+	<string name="addrlist_name">阿童木不是我</string>
+	<string name="addrlist_encount_time_">已相遇7次</string>		
+	<string name="addrlist_encount_time__">已相遇%s次</string>
+
+	<string name="addrlist_header_icon_text">新的求认识</string>
+	<string name="addrlist_header_icon_text_2">有缘的陌生人</string>
+	<string name="addrlist_foot_text">%d位联系人</string>	
+
+	<string name="addrlist_empty_first_text">还没有求认识申请</string>
+	<string name="addrlist_empty_second_text">你可以通过擦肩和随机聊向有缘人发送求认识</string>	
+	
+	<string name="addrlist_empty_first_text_0">还没有缘分排名</string>
+	<string name="addrlist_empty_second_text_0">相遇的陌生人将按照相遇次数在此进行排名</string>
+	
+	<string name="addrlist_new_title">求认识</string>
+	<string name="addrlist_new_text">同意</string>
+
+	<string name="addrlist_new_hasagree">已同意</string>
+	<string name="addrlist_new_pleasewait">等待验证</string>
+		
+	<string name="addrlist_new_agree">正在添加对方为好友</string>
+	<string name="addrlist_new_success">已完成</string>
+	<string name="addrlist_new_agreed">已经同意</string>
+	<string name="addrlist_new_send">发送请求成功</string>
+	
+	<string name="addrlist_new_friend">我通过了你的好友验证请求，现在我们可以开始聊天了</string>
+	<string name="andrlist_add_newfriend">添加好友</string>
+	<string name="addrlist_new_search_hint">搜索擦肩号</string>
+	
+	<string name="addrlist_result_text">搜索：</string>
+	<string name="addrlist_new_friend_notexist">用户不存在，请检查擦肩号是否正确</string>
+	
+	<string name="addrlist_new_search">正在搜索用户信息</string>
+	<string name="addrlist_new_same">不能给自己求认识</string>
+	
+	<!-- Photo Picker -->
+	<string name="photopicker_main_title">选择图片</string>
+	<string name="photopicker_all_image">所有图片</string>
+	<string name="photopicker_camera_image">照相图片</string>
+	
+	<string name="photopicker_image_number">%s张</string>
+	<string name="photopicker_button_name">使用</string>
+
+	<string name="photopicker_handle">剪裁中</string>
+
+	<!-- Setting -->
+	<string name="setting_user_name">清嘉容夏</string>
+	<string name="setting_user_gexing">擦肩号：%s</string>	
+	
+	<string name="setting_content_first_text">消息通知设置</string>
+	<string name="setting_content_second_text">擦肩设置</string>
+	<string name="setting_content_third_text">聊天设置</string>
+	<string name="setting_content_fourth_text">缘分圈设置</string>
+
+	<string name="setting_third_about_text">关于擦肩</string>
+	<string name="setting_fourd_account_text">账号</string>	
+	<string name="setting_loading_string">正在加载</string>
+
+	<string name="setting_user_image_text">头像</string>
+	<string name="setting_user_nickname_text">昵称</string>
+	<string name="setting_user_nickname_text2">更改昵称</string>
+	<string name="setting_usre_nickname_text_content">青松明月下蝉鸣寒山寺中</string>
+	
+	<string name="setting_user_detail_modify_text">写出真诚的文字，能够让缘分走的更近！</string>
+	
+	<string name="setting_user_cajianhao_text">擦肩号</string>
+	<string name="setting_user_cajianhao_content">7362913</string>
+				
+	<string name="setting_user_gexing_text">个性签名</string>
+	<string name="setting_user_gexing_content">做一个快乐的人，无论过往</string>
+
+	<string name="setting_user_birthday_text">生日</string>
+	<string name="setting_user_birthday_content">6月6日</string>
+
+	<string name="setting_user_xingzuo_text">星座</string>
+	<string name="setting_user_xingzuo_content">天蝎座</string>
+			
+	<string name="setting_user_school_text">学校</string>
+	<string name="setting_user_school_content">清华大学</string>
+	
+	<string name="setting_user_class_text">班级</string>
+	<string name="setting_user_class_content">未填写</string>
+	
+	<string name="setting_user_hometown_text">家乡</string>
+	<string name="setting_user_hometown_content">未填写</string>
+	
+	<string name="setting_user_habbit_text">爱好/擅长</string>
+	<string name="setting_user_habbit_content">未填写</string>
+
+	<string name="setting_user_detail_title">我的资料</string>
+	<string name="setting_user_fail">请求失败</string>
+
+	<string name="setting_user_detail_modify_complete">完成</string>
+	<string name="setting_user_detail_modify_ing">正在修改</string>
+	
+	<string name="setting_user_detail_modify_title">保存</string>
+	
+	<string name="setting_user_detail_modify_error">修改失败</string>
+	<string name="setting_user_detail_modify_success">修改成功</string>
+	
+	<string name="setting_user_detail_modify_special_text">好的名字能够吸引更好的缘分。</string>
+	
+	<string name="setting_auth_type3_text1">你还没有设置过不显示和谁的擦肩记录，</string>
+	<string name="setting_auth_type3_text2">在浏览擦肩记录时长按列表即可设置。</string>
+	
+	<string name="setting_auth_type4_text1">你还没有设置过不让谁看到和我的擦肩记录，</string>
+	<string name="setting_auth_type4_text2">在对方详细资料页-右上角菜单可以设置。</string>
+	
+	<string name="setting_auth_type5_text1">你还没有设置过和谁相遇时提醒我，</string>
+	<string name="setting_auth_type5_text2">在对方详细资料页-底部按钮可以设置。</string>
+
+	<string name="setting_auth_type1_text1">你还没有设置过不看谁的动态，</string>
+	<string name="setting_auth_type1_text2">在浏览动态时长按列表即可设置。</string>
+	
+	<string name="setting_auth_type2_text1">你还没有设置过不让谁看我的动态，</string>
+	<string name="setting_auth_type2_text2">在对方详细资料页-右上角菜单可以设置。</string>
+			
+	<!-- Setting User Notification -->
+	<string name="setting_notification_notburd_text">免打扰模式</string>
+	<string name="setting_notification_notburd_content">16:12前免打扰</string>
+			
+	<string name="setting_notification_xiangling_text">响铃</string>
+	<string name="setting_notification_lingyin_text">铃音</string>
+	<string name="setting_notification_lingyin_content">跟随系统</string>
+
+	<string name="setting_notification_zhendong_text">震动</string>
+	<string name="setting_notitication_dongtai_text">与我相关的动态</string>
+	<string name="setting_notification_dongtai_content">若关闭，当别人评论或点赞你的动态时，不会通知你。</string>
+
+	<string name="setting_notification_newmsg_text">新消息通知提醒</string>
+	<string name="setting_notification_newmsg_content">若关闭，有新消息时，你将收不到任何通知和提醒。</string>				
+
+	<string name="setting_notification_title">消息通知设置</string>
+	<string name="setting_cajiansetting_text">擦肩对象</string>
+	
+	<string name="setting_cajiansetting_content">设置后，擦肩列表和随机聊将只显示当前性别的用户。</string>
+	<string name="setting_cajiansetting_sex_name">男生</string>			
+
+	<string name="setting_cajiansetting_not_show">不显示与谁的擦肩记录</string>
+	<string name="setting_cajiansetting_not_see">不让谁看到和我的擦肩记录</string>	
+	<string name="setting_cajiansetting_see">和谁相遇时会提醒我</string>
+	<string name="setting_cajiansetting_title">擦肩设置</string>
+
+	<string name="setting_cajiansetting_detail_title">不让谁看到和我的擦肩记录</string>
+	<string name="setting_cajiansetting_detail_text">以下用户的擦肩列表不会显示和你的相遇记录；恢复后，下次相遇时，相遇记录会再次出现在对方的擦肩列表。</string>
+			
+	<string name="setting_cajiansetting_detail_midle_title">不显示和谁的擦肩记录</string>
+	<string name="setting_cajiansetting_detail_final_title">和谁相遇时会提醒我</string>
+	<string name="setting_cajiansetting_detail_midle2_title">不让谁看到和我的擦肩记录</string>
+
+	<string name="setting_cajiansetting_detail_final_content">当和以下用户再次相遇时，系统会通知你；取消后，再次相遇时，系统将不再提醒你。</string>
+	<string name="setting_cajiansetting_detail_midle_content">你的擦肩列表不会显示和以下用户的相遇记录；恢复后，下次相遇时，相遇记录会再次显示在你的擦肩列表。</string>
+
+	<string name="setting_cajiansetting_item_name">韩燕遗风</string>
+	<string name="setting_cajiansetting_item_name2">sisiMA</string>
+	<string name="setting_cajiansetting_item_button_name">恢复</string>
+				
+	<string name="setting_cajiansetting_chat_title">聊天设置</string>
+	<string name="setting_cajiansetting_chat_first_content">设置聊天背景</string>
+	<string name="setting_cajiansetting_chat_clear_allcontent">清空所有聊天记录</string>
+
+	<string name="setting_about_logo_text">擦肩1.1</string>
+	<string name="setting_about_shengming_text">Copyright 2015 All Rights Reserved.</string>
+	<string name="setting_about_shengming_about_text">服务条款和隐私政策</string>
+	
+	<string name="setting_about_fankui">反馈问题建议</string>
+	<string name="setting_about_version">版本更新</string>
+	<string name="setting_about_story">擦肩故事</string>
+	
+	<string name="setting_about_version_default_text">已是最新版</string>
+	<string name="setting_about_version_new_text">有新版本</string>
+	<string name="setting_about_version_title">关于擦肩</string>
+
+	<string name="setting_about_account_text">账号</string>
+	<string name="setting_about_account_phone">手机号</string>
+	<string name="setting_about_accoutn_phone_number">15120017934</string>
+
+	<string name="setting_about_account_cajian">擦肩</string>
+	<string name="setting_about_accoutn_cajian_number">8736234</string>
+
+	<string name="setting_about_security_text">安全</string>
+	<string name="setting_about_security_password">修改密码</string>
+	<string name="setting_about_security_exit">退出</string>
+			
+	<string name="setting_about_exit_text">确定退出擦肩吗？退出后将不能再遇见有缘人及收到来自好友的消息。</string>
+	<string name="setting_about_resetpassword_text">请设置新的擦肩密码。擦肩号是你在擦肩应用中的身份证号，也是找回账号的最终途径，请牢记。</string>
+
+	<string name="setting_about_resetpassword_text1">擦肩号</string>
+	<string name="setting_about_resetpassword_text1_">43553224</string>
+		
+	<string name="setting_about_resetpassword_text2">填写密码</string>
+	<string name="setting_about_resetpassword_text3">再次填写确认</string>
+	
+	<string name="setting_about_newpassword">新密码</string>
+	<string name="setting_about_confirm_newpassword">确认密码</string>
+	<string name="setting_about_newpassword_title">重设密码</string>
+	
+	<string name="setting_about_newpassword_complete">完成</string>
+	
+	<string name="setting_phone_text1">已绑定的手机号：</string>
+	<string name="setting_phone_text2">15120017934</string>
+	<string name="setting_phone_text3">更换手机号</string>
+	
+	<string name="setting_phone_ui_text">更换手机号后，下次登录须使用新手机号登录。当前手机号：%s</string>
+	<string name="setting_phone_ui_line_text">+86</string>
+	
+	<string name="setting_phone_ui_input_phone">请输入手机号</string>
+	<string name="setting_phone_ui_next">下一步</string>
+	
+	<string name="setting_phone_ui_back">确定放弃更换吗？当然以后也可以再次更换手机号码。</string>
+	
+	<!-- yuanfen circle -->
+	
+	<string name="setting_yuanfen_firstblock_text">显示所有相遇对象的动态</string>
+	<string name="setting_yuanfen_second_text">若开启，缘分圈列表里会显示所有相遇的对象（无论是否为好友）的动态。</string>	
+
+	<string name="setting_yuanfen_second_block_text">只显示好友的动态</string>
+	<string name="setting_yuanfen_second_block_text2">若开启，缘分圈列表里只显示好友的动态。</string>
+			
+	<string name="setting_yuanfen_third_text">不看谁的动态</string>
+	<string name="setting_yuanfen_fourth_text">不让谁看我的动态</string>
+
+	<string name="setting_yuanfen_title">缘分圈设置</string>
+	
+	<string name="setting_yuanfen_notsee_content">你的缘分圈不会显示以下用户的动态；恢复后，对方发布的动态会重新显示在你的缘分圈。</string>
+	<string name="setting_yuanfen_notletsee_content">你发布的缘分圈动态，以下用户看不到；恢复后，对方将能看到你发布的动态。</string>
+
+	<!-- yuan fen circle -->
+	<string name="yuanfencircle_header_nickname">青松明月流水人家</string>
+	<string name="yuanfencircle_header_dongtai">浊酒一杯家万里，燕然未勒归无计，真的需要这么长嘛~~~</string>	
+
+	<string name="yuanfencircle_content_no_text1">到缘分圈查看有缘人近况</string>
+	<string name="yuanfencircle_content_no_text2">分享自己的精彩瞬间！</string>
+		
+	<string name="yuanfencircle_content_no_button">分享</string>
+	<string name="yuanfencircle_content_user_name">幽阶一夜苔生</string>
+
+	<string name="yuanfencircle_content_user_time">2分钟前</string>
+	
+	<string name="yuanfencircle_content_user_zan_text1">邬松涛、ki、蔡妍、于雷等4人觉得喜欢</string>
+	<string name="yuanfencircle_content_user_zan_text2">ki、</string>
+	<string name="yuanfencircle_content_user_zan_text3">蔡妍、</string>
+	<string name="yuanfencircle_content_user_zan_text4">于雷</string>
+			
+	<string name="yuanfencircle_content_user_zanfinal">等4人觉得喜欢</string>
+	<string name="yuanfencircle_content_user_zanfinal_">等%s人觉得喜欢</string>
+
+	<string name="yuanfencircle_content_comment_text1">展开更多评论</string>
+	<string name="yuanfencircle_content_comment_text2">收起</string>
+					
+	<string name="yuanfencircle_content_comment_dy_text">正在加载更多评论</string>
+	<string name="yuanfencircle_content_comment_dy_left_text">邬松涛回复ki：没问题，假期好好玩~</string>
+	
+	<string name="yuanfencircle_content_comment_dy_left_text2">ki回复蔡妍：今天天好，就是要唱啊，</string>
+	<string name="yuanfencircle_content_comment_dy_left_text3">蔡妍回复ki：今天我生日哈，我请你吃饭怎么样！</string>
+		    
+	<string name="yuanfencircle_content_comment_dy_middle">回复</string>
+	
+	<string name="yuanfencircle_content_content_text">刚出锅的饺子，才发现加班回来能吃伤手工包的饺子也成了一件持续的幸福的事，开吃</string>
+	<string name="yuanfencircle_content_extention">查看全文</string>
+
+	<string name="msg_system_text">你已添加%s,矜持沉默是缘分的天敌哦！</string>
+	<string name="msg_agree_to_friend_text">Hi,发现你挺有意思的，希望我们能进行愉快的聊天！</string>
+	
+	<string name="msg_failed_upload_userlogo">上传头像失败</string>
+	<string name="msg_success_upload_userlogo">上传头像成功</string>
+	
+</resources>

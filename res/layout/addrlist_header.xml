@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+    
+    <RelativeLayout 
+        android:id="@+id/addrlist_header_block_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/addrlist_block_height"
+        android:background="@drawable/main_ui_listitem_bg">
+	    <ImageView 
+	        android:id="@+id/addrlist_header_icon"
+	        android:layout_width="@dimen/addrlist_header_icon_width_height"
+	        android:layout_height="@dimen/addrlist_header_icon_width_height"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/addrlist_header_icon_0"
+	        android:layout_marginLeft="@dimen/addrlist_icon_margin_left"
+	        android:layout_marginRight="@dimen/addrlist_icon_margin_right"
+	        android:contentDescription="@null"/>
+	    <TextView 
+	        android:id="@+id/addrlist_header_icon_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:text="@string/addrlist_header_icon_text"
+	        android:textColor="@color/detail_viewpager_left_textcolor"
+	        android:textSize="@dimen/addrlist_name_textsize"
+	        android:layout_toRightOf="@id/addrlist_header_icon"/>
+	    
+	    <TextView 
+	        android:id="@+id/addrlist_header_icon_update"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/addrlist_header_icon_update_margin_left"
+	        android:layout_toRightOf="@id/addrlist_header_icon_text"
+	        android:gravity="center"
+	        android:visibility="invisible"
+	        android:background="@drawable/satellite_number_update"
+	        android:text="@string/main_ui_chat_icon_number"
+	        android:textColor="@android:color/white"/>
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/addrlist_header_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/addrlist_icon_margin_left"
+        android:layout_marginRight="@dimen/addrlist_header_line_padding_right"
+        android:layout_below="@id/addrlist_header_block_1"
+        android:background="@color/main_ui_line_color"/>
+    
+    <RelativeLayout 
+        android:id="@+id/addrlist_header_block_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/addrlist_block_height"
+        android:layout_below="@id/addrlist_header_line"
+        android:background="@drawable/main_ui_listitem_bg">
+	    <ImageView 
+	        android:id="@+id/addrlist_header_icon_2"
+	        android:layout_width="@dimen/addrlist_header_icon_width_height"
+	        android:layout_height="@dimen/addrlist_header_icon_width_height"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/addrlist_header_icon_1"
+	        android:layout_marginLeft="@dimen/addrlist_icon_margin_left"
+	        android:layout_marginRight="@dimen/addrlist_icon_margin_right"
+	        android:contentDescription="@null"/>
+	    <TextView 
+	        android:id="@+id/addrlist_header_icon_text_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:text="@string/addrlist_header_icon_text_2"
+	        android:textColor="@color/detail_viewpager_left_textcolor"
+	        android:textSize="@dimen/addrlist_name_textsize"
+	        android:layout_toRightOf="@id/addrlist_header_icon_2"/>
+    </RelativeLayout>
+
+</RelativeLayout>

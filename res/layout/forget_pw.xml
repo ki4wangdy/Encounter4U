@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color">
+
+    <include 
+        android:id="@+id/forget_pw_title"
+        layout="@layout/title_view"
+        android:layout_alignParentTop="true"/>
+    
+	<TextView 
+        android:id="@+id/forget_pw_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/phone_verify_content_margin_top"
+        android:layout_below="@id/forget_pw_title"
+        android:text="@string/forget_pw_content"
+        android:textSize="@dimen/phone_verify_content_textsize"/>
+    
+	<RelativeLayout 
+        android:id="@+id/forget_pw_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phone_verify_block_height"
+        android:layout_below="@id/forget_pw_content"
+        android:layout_marginTop="@dimen/phone_verify_block_margin_top_"
+        android:layout_marginLeft="@dimen/register_nick_block_margin_left"
+        android:layout_marginRight="@dimen/register_nick_block_margin_left">
+        
+		<View 
+            android:id="@+id/forget_pw_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_nick_block_bg"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/register_nick_block_bg"/>
+	    
+		<EditText
+		    android:id="@+id/forget_pw_edittext"
+		    style="@style/login.edittext.style"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:imeOptions="actionDone"
+		    android:singleLine="true"
+		    android:gravity="bottom"
+		    android:paddingBottom="@dimen/forget_pw_edit_margin_bottom"
+		    android:textColor="@color/register_nick_text_color"
+		    android:textColorHint="@color/register_nick_content_hint_text_color"
+		    android:textSize="@dimen/register_nick_text_size" />
+	</RelativeLayout>
+
+	<Button
+        android:id="@+id/forget_pw_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_black_bg_heigth"
+        android:layout_marginLeft="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginRight="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginTop="@dimen/register_button_margin_top"
+        android:background="@drawable/register_button_pre"
+        android:gravity="center"
+        android:text="@string/forget_pw_next"
+        android:textColor="@color/title_content_textcolor"
+        android:textSize="@dimen/register_nick_text_size" />
+		
+</RelativeLayout>

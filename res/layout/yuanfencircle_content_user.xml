@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/yuanfencircle_content_user_block_height">
+    
+    <ImageView 
+        android:id="@+id/yuanfencircle_user_icon"
+        android:layout_width="@dimen/yuanfencircle_content_user_image_width_height"
+        android:layout_height="@dimen/yuanfencircle_content_user_image_width_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/yuanfencircle_content_user_image_marginleft"
+        android:layout_marginTop="@dimen/yuanfencircle_content_user_image_margintop"
+        android:contentDescription="@null"
+        android:src="@drawable/main_ui_header_nopic"
+        android:scaleType="fitXY"/>
+
+    <TextView 
+        android:id="@+id/yuanfencircle_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/yuanfencircle_user_icon"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/yuanfencircle_content_user_name_marginleft"
+        android:layout_marginTop="@dimen/yuanfencircle_content_user_name_margintop"
+        android:text="@string/yuanfencircle_content_user_name"
+        android:textColor="@color/yuanfencircle_content_user_name"
+        android:textSize="@dimen/yuanfencircle_content_user_name"/>
+    
+    <TextView 
+        android:id="@+id/yuanfencircle_user_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/yuanfencircle_user_name"
+        android:layout_below="@id/yuanfencircle_user_name"
+        android:layout_marginTop="@dimen/yuanfencircle_content_user_time_margintop"
+        android:drawableRight="@drawable/yuanfencircle_user_public"
+        android:drawablePadding="@dimen/yuanfencircle_content_user_private_marginleft"
+        android:text="@string/yuanfencircle_content_user_time"
+        android:textColor="@color/yuanfencircle_content_user_time"
+        android:textSize="@dimen/yuanfencircle_content_user"/>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/yuanfencircle_user_delete"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/yuanfencircle_content_uesr_delete_marginright"
+        android:layout_marginTop="@dimen/yuanfencircle_content_uesr_delete_margintop"/>
+    
+</RelativeLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imrub.shoulder"
+    android:versionCode="11"
+    android:versionName="0.5.7_build1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <supports-screens 
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:smallScreens="false"/>
+    
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />  
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>      
+    
+    <application
+        android:name="com.imrub.shoulder.base.app.EncounterApplication"
+        android:allowBackup="false"
+		android:hardwareAccelerated="true"
+		android:largeHeap="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name">
+        <activity
+            android:name=".module.SplashActivity"
+            android:theme="@style/splashTheme"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".module.NewGuidActivity"
+            android:screenOrientation="portrait"/>
+        
+        <activity 
+            android:name=".module.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity 
+            android:name=".module.register.RegisterActivity"
+			android:windowSoftInputMode="stateVisible|adjustPan" 
+            android:screenOrientation="portrait"/>
+        
+        <activity 
+            android:name=".module.register.PhoneVerifyActivity"
+			android:windowSoftInputMode="stateVisible|adjustPan" 
+            android:screenOrientation="portrait"/>
+        
+        <activity 
+            android:name=".module.register.MailVerifyActivity"
+			android:windowSoftInputMode="stateVisible|adjustPan" 
+            android:screenOrientation="portrait"/>
+
+        <activity 
+            android:name=".module.register.SchoolCertificationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity 
+            android:name=".module.main.MainUIActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+
+        <activity 
+			android:name=".module.register.ForgetPwActivity"
+			android:windowSoftInputMode="stateVisible|adjustPan" 
+            android:screenOrientation="portrait"/>
+
+        <activity 
+			android:name=".module.register.ForgetNewPwActivity"
+			android:windowSoftInputMode="stateVisible|adjustPan" 
+            android:screenOrientation="portrait"/>
+        
+        <activity 
+			android:name=".module.detail.UserDetailInfoActivity"
+			android:screenOrientation="portrait"/>
+        
+        <activity 
+			android:name=".module.addrlist.more.AddrlistYuanActivity"
+			android:screenOrientation="portrait"/>
+
+        <activity 
+			android:name=".module.addrlist.more.AddrlistNewActivity"
+			android:screenOrientation="portrait"/>
+        
+        <activity 
+            android:name=".module.photopicker.PhotoPicker"
+            android:screenOrientation="portrait"/>
+        
+        <activity 
+            android:name=".module.photopicker.ImageGallery"
+            android:screenOrientation="portrait"/>
+
+		<activity 
+            android:name=".module.photopicker.PhotoPickerNow"
+            android:screenOrientation="portrait"/>
+        
+		<activity 
+		    android:name=".module.setting.userDetail.SettingUserDetailActivity"
+		    android:screenOrientation="portrait"/>
+		
+		<activity 
+		    android:name=".module.setting.SettingUserNotificationActivity"
+		    android:screenOrientation="portrait"/>
+
+		<activity 
+		    android:name=".module.setting.cajiansetting.SettingCajianActivity"
+		    android:screenOrientation="portrait"/>
+
+		<activity 
+		    android:name=".module.setting.cajiansetting.SettingCajianDetailActivity"
+		    android:screenOrientation="portrait"/>
+
+		<activity 
+		    android:name=".module.setting.userChat.SettingChatActivity"
+		    android:screenOrientation="portrait"/>
+
+		<activity 
+		    android:name=".module.setting.about.SettingAboutActivity"
+		    android:screenOrientation="portrait"/>
+
+		<activity 
+		    android:name=".module.setting.SettingYuanfenActivity"
+		    android:screenOrientation="portrait"/>
+
+		<activity 
+		    android:name=".module.setting.userAccount.SettingUserAccountActivity"
+		    android:screenOrientation="portrait"/>
+		
+		<activity 
+		    android:name=".module.setting.userAccount.SettingNewPasswordActivity"
+		    android:screenOrientation="portrait"/>
+
+		<activity 
+		    android:name=".module.setting.userAccount.SettingChangePhoneActivity"
+		    android:screenOrientation="portrait"/>
+		
+		<activity 
+		    android:name=".module.setting.userAccount.SettingChangePhoneUIActivity"
+		    android:screenOrientation="portrait"/>
+
+		<activity 
+		    android:name=".module.setting.userDetail.SettingUserDetailModifyActivity"
+		    android:windowSoftInputMode="stateVisible|adjustPan" 
+		    android:screenOrientation="portrait"/>
+		
+		<activity 
+		    android:name=".module.detail.QiuKnowMessageActivity"
+		    android:windowSoftInputMode="stateVisible|adjustPan"
+		    android:screenOrientation="portrait"/>
+		
+		<activity 
+		    android:name=".module.addrlist.newfriend.AddrNewFriendActivity"
+		    android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateVisible|adjustPan" />
+		
+        <!-- QQ 登录相关Activity -->
+		<activity
+			android:name="com.tencent.tauth.AuthActivity"
+			android:launchMode="singleTask"
+			android:noHistory="true" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<!-- 注意在这里用你的appid替换222222 -->
+				<data android:scheme="tencent1104546752" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name="com.tencent.connect.common.AssistActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:screenOrientation="portrait"/>
+		
+        <!-- Service by Application -->
+    	<service 
+    	    android:name=".module.im.server.IMServer"
+    	    android:label="@string/service_push_name"
+    	    android:process=":push"
+    	    android:enabled="true"
+    	    android:exported="false">
+    	    <intent-filter android:priority="4343224"/>
+    	</service>
+
+    	<!-- Receiver by Application -->
+    	<receiver 
+    	    android:name=".module.im.server.NetworkBroadcast"
+    	    android:enabled="true"
+    	    android:label="networkBroadcast">
+    	    <intent-filter 
+    	        android:priority="2147483647">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+    	    </intent-filter>
+    	</receiver>
+    	
+    	<receiver 
+    	    android:name=".module.im.server.BootBroadcast"
+    	    android:enabled="true"
+    	    android:label="bootBroadcast">
+    	    <intent-filter 
+    	        android:priority="244242453">
+				<category android:name="android.intent.category.HOME"/>
+    	        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+    	    </intent-filter>
+    	</receiver>
+    	
+    	<receiver 
+    	    android:name=".module.im.server.ServiceStopBroadcast"
+    	    android:enabled="true"
+    	    android:exported="false"
+    	    android:process=":push"
+    	    android:label="serviceStopBroadcast">
+    	    <intent-filter 
+    	        android:priority="2442434253">
+    	        <action android:name="com.imrub.shoulder.ServerStop"/>
+    	    </intent-filter>
+    	</receiver>
+    	
+    	<receiver 
+    	    android:name=".module.im.client.ConnectedBroadcast"
+    	    android:enabled="true"
+    	    android:exported="false"
+    	    android:label="connectedBroadcast">
+    	    <intent-filter android:priority="4232321">
+    	        <action android:name="com.imrub.shoulder.im.client.Connection"/>
+    	    </intent-filter>
+    	</receiver>
+    
+    	<receiver 
+    	    android:name=".module.im.client.MessageBroadcast"
+    	    android:enabled="true"
+    	    android:exported="false"
+    	    android:label="messageBroadcast">
+    	    <intent-filter android:priority="42332321">
+    	        <action android:name="com.imrub.shoulder.im.client.Message"/>
+    	    </intent-filter>
+    	</receiver>
+    	
+    	<receiver 
+    	    android:name=".module.cajian.wifi.WifiConnectReceiver"
+    	    android:enabled="true"
+    	    android:exported="false">
+    	</receiver>
+    	
+    	<service 
+    	    android:name=".module.cajian.wifi.WifiService"
+    	    android:label="@string/service_wifi_net"
+    	    android:enabled="true"
+    	    android:exported="false">
+    	    <intent-filter android:priority="43432224"/>
+    	</service>
+    	
+    	<!-- ping receiver -->
+    	<receiver 
+    	    android:name=".module.ping.PingService"
+    	    android:exported="false"
+    	    android:process=":push"/>
+    	
+    	<!-- Over Receiver by Application -->
+    	
+	</application>
+
+</manifest>

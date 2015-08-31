@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/photo_picker_list_item_padding"
+    android:layout_marginBottom="@dimen/photo_picker_list_item_padding"
+    android:background="@drawable/main_ui_listitem_bg">
+    
+    <ImageView
+        android:id="@+id/photopicker_image_view"
+        android:layout_width="@dimen/photo_picker_list_item_image_width_height"
+        android:layout_height="@dimen/photo_picker_list_item_image_width_height"
+        android:layout_marginLeft="@dimen/photo_picker_list_item_padding"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/photopicker_suolue_bg" />
+
+    <TextView 
+        android:id="@+id/photopicker_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/photopicker_image_view"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/photo_picker_list_item_title_margin_top"
+        android:layout_marginLeft="@dimen/photo_picker_list_item_title_margin_left"
+        android:textColor="@color/photopicker_list_item_title_color"
+        android:textSize="@dimen/photo_picker_list_item_title_text_size"/>
+    
+    <TextView 
+        android:id="@+id/photopicker_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/photopicker_image_view"
+		android:layout_marginLeft="@dimen/photo_picker_list_item_title_margin_left"
+        android:layout_below="@id/photopicker_title"
+        android:layout_marginTop="@dimen/photo_picker_list_item_number_margin_top"
+        android:textColor="@color/photopicker_list_item_number_color"
+        android:textSize="@dimen/photo_picker_list_item_number_size"/>
+    
+	<ImageView 
+	    android:contentDescription="@null"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginRight="@dimen/photo_picker_list_item_arrow_margin_right"
+	    android:src="@drawable/photopicker_item_right"/>
+    
+</RelativeLayout>

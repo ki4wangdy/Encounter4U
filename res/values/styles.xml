@@ -1,0 +1,77 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- 
+            <item name="android:windowAnimationStyle">@style/default_animation</item>
+     -->
+    
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="default_animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/default_anim_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/default_stay</item>
+        <item name="android:activityCloseEnterAnimation">@anim/default_stay</item>
+        <item name="android:activityCloseExitAnimation">@anim/default_anim_out</item>
+    </style>
+
+	<style name="enter_application_animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/default_stay</item>
+        <item name="android:activityOpenExitAnimation">@anim/default_enter_application</item>
+        <item name="android:activityCloseEnterAnimation">@anim/default_stay</item>
+        <item name="android:activityCloseExitAnimation">@anim/default_anim_out</item>
+    </style>
+    
+	<!-- login activity for EditText -->
+	<style name="login.edittext.style" parent="@android:style/Widget.EditText">
+		<item name="android:background">@null</item>
+	</style>
+
+	<!-- Common Dialog Style -->
+	<style name="Theme_commonDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+    </style>
+	
+	<style name="detail.viewpager.left.text" parent="@android:style/Widget.TextView">
+	    <item name="android:textColor">@color/detail_middle_textcolor</item>
+	    <item name="android:textSize">@dimen/detail_viewpager_text_size</item>
+	    <item name="android:layout_marginTop">@dimen/detail_viewpager_text_margintop</item>
+	    <item name="android:layout_marginLeft">@dimen/detail_viewpager_text_marginleft</item>
+	</style>
+	
+	<style name="detail.viewpager.left。right。text" parent="@android:style/Widget.TextView">
+	    <item name="android:textColor">@color/detail_middle_textcolor</item>
+	    <item name="android:textSize">@dimen/detail_viewpager_text_size</item>
+	</style>
+
+    <style name="splashTheme" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+	
+	<!-- 
+	<style name="AppThemeForMain" parent="android:Theme.Light">
+    	<item name="android:windowBackground">@android:color/transparent</item>
+    	<item name="android:windowNoTitle">true</item>
+	</style>
+	 -->	
+	
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/photo_picker_header_view_padding_bottom" >
+
+    <GridView
+        android:id="@+id/photo_picker_header_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="2dp"
+        android:numColumns="4"
+        android:scrollbars="@null"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp" />
+
+</FrameLayout>

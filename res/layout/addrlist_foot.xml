@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/addrlist_foot_height"
+    android:background="@color/addrlist_alph_color">
+    <TextView 
+        android:id="@+id/addrlist_foot_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/addrlist_foot_height"
+        android:layout_centerHorizontal="true"
+        android:text="@string/addrlist_foot_text"
+        android:textColor="@color/main_ui_header_text_color"
+        android:textSize="@dimen/addrlist_foot_textsize"
+        android:layout_marginTop="@dimen/addrlist_foot_text_margin_top"/>
+</RelativeLayout>

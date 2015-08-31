@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imagegallery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color" >
+
+    <include
+        android:id="@+id/imagegallery_title"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_view" />
+
+    <FrameLayout
+        android:id="@+id/imagegallery_block"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imagegallery_title">
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/photo_picker_list_item_padding"
+            android:horizontalSpacing="@dimen/photo_picker_list_item_padding"
+            android:numColumns="4"
+            android:scrollbars="@null"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/photo_picker_list_item_padding" />
+
+        <com.imrub.shoulder.module.photopicker.imageZoom.PhotoView
+            android:id="@+id/imagegallery_photoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:visibility="invisible"/>
+        
+        <ImageView 
+            android:id="@+id/imagegallery_layer"
+            android:contentDescription="@null"
+            android:visibility="invisible"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/photopicker_layer"/>
+    </FrameLayout>
+
+</RelativeLayout>

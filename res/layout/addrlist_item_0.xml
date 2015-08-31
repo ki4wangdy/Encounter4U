@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+	<TextView 
+	    android:id="@+id/addr_list_alph"
+	    android:layout_width="match_parent"
+	    android:gravity="center_vertical"
+	    android:background="@color/addrlist_alph_color"
+	    android:layout_alignParentTop="true"
+	    android:textSize="@dimen/addrlist_alph_textsize"
+	    android:textColor="@color/main_ui_header_text_color"
+	    android:paddingLeft="@dimen/addrlist_icon_margin_left"
+	    android:layout_height="@dimen/addrlist_alph_height"/>
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/addrlist_block_height"
+	    android:layout_below="@id/addr_list_alph"
+	    android:background="@drawable/main_ui_listitem_bg">
+	    <ImageView
+	        android:id="@+id/addr_list_icon"
+	        android:layout_width="@dimen/addrlist_icon_width_heigth"
+	        android:layout_height="@dimen/addrlist_icon_width_heigth"
+	        android:layout_centerVertical="true"
+	        android:contentDescription="@null"
+	        android:scaleType="fitXY"
+	        android:layout_marginLeft="@dimen/addrlist_icon_margin_left"
+	        android:layout_marginRight="@dimen/addrlist_icon_margin_right"
+	        android:src="@drawable/icon_72x72" />
+	
+	    <TextView
+	        android:id="@+id/addr_list_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:gravity="top"
+	        android:layout_marginTop="@dimen/addrlist_name_margin_top"
+	        android:text="@string/addrlist_name"
+	        android:textColor="@color/detail_viewpager_left_textcolor"
+	        android:textSize="@dimen/addrlist_name_textsize"
+	        android:layout_toRightOf="@id/addr_list_icon"/>
+	
+	    <TextView 
+	        android:id="@+id/addr_list_encount_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="top"
+	        android:layout_toRightOf="@id/addr_list_icon"
+	        android:text="@string/addrlist_encount_time_"
+	        android:textColor="@color/main_ui_header_text_color"
+	        android:textSize="@dimen/addrlist_encount_time_textsize"
+	        android:layout_below="@id/addr_list_name"/>
+	    
+  		<View 
+  		    android:id="@+id/addr_list_line"
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:layout_marginLeft="@dimen/addrlist_icon_margin_left"
+	        android:layout_marginRight="@dimen/addrlist_header_line_padding_right"
+	        android:layout_alignParentBottom="true"
+	        android:background="@color/main_ui_line_color"/>
+  		
+	</RelativeLayout>
+</RelativeLayout>

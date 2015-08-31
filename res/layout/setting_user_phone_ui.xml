@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color">
+    
+    <include 
+		android:id="@+id/setting_phone_ui_title"
+        layout="@layout/title_view"
+        android:layout_alignParentTop="true"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_phone_ui_title"
+        android:layout_marginLeft="@dimen/setting_phone_ui_margin_left"
+        android:layout_marginRight="@dimen/setting_phone_ui_margin_right"
+        android:layout_marginTop="@dimen/setting_phone_ui_margin_top"
+        android:text="@string/setting_phone_ui_text"
+        android:textColor="@color/setting_phone_ui_text"
+        android:textSize="@dimen/setting_phone_ui_text_size"/>
+
+	<View 
+		android:id="@+id/setting_phone_ui_line1"
+		android:layout_width="@dimen/setting_phone_ui_line1_width"
+		android:layout_marginLeft="@dimen/setting_about_newpassword_line_margin_right"
+		android:layout_below="@id/setting_phone_ui_title"
+		android:layout_marginTop="@dimen/setting_phone_ui_line1_margin_top"
+		android:layout_height="@dimen/register_nick_block_bg"
+		android:background="@drawable/register_nick_line_default"/>
+    
+	<View 
+		android:id="@+id/setting_phone_ui_line2"
+		android:layout_width="match_parent"
+		android:layout_marginLeft="@dimen/setting_phone_ui_line2_margin_left"
+		android:layout_marginRight="@dimen/setting_about_newpassword_line_margin_right"
+		android:layout_toRightOf="@id/setting_phone_ui_line1"
+		android:layout_below="@id/setting_phone_ui_title"
+		android:layout_marginTop="@dimen/setting_phone_ui_line1_margin_top"
+		android:layout_height="@dimen/register_nick_block_bg"
+		android:background="@drawable/register_nick_block_bg"/>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/setting_phone_ui_line_text"
+	    android:textColor="@color/setting_phone_text_size"
+	    android:textSize="@dimen/setting_phone_ui_line_text"
+	    android:layout_marginRight="@dimen/setting_phone_ui_line1_text_margin_right"
+	    android:layout_alignRight="@id/setting_phone_ui_line1"
+	    android:layout_alignBottom="@id/setting_phone_ui_line1"
+	    android:layout_marginBottom="@dimen/setting_phone_ui_line1_margin_bottom"/>	
+
+	<EditText 
+		android:id="@+id/setting_phone_ui_number"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/setting_phone_ui_edittext_margin_left"
+		android:background="@null"
+		android:layout_marginRight="@dimen/setting_about_newpassword_edittext_marginleft"
+		android:textColor="@color/setting_phone_text_size"
+		android:textSize="@dimen/addrlist_search_textsize"
+		android:hint="@string/setting_phone_ui_input_phone"
+		android:layout_alignLeft="@id/setting_phone_ui_line2"
+		android:layout_alignBottom="@id/setting_phone_ui_line2"
+	    android:layout_marginBottom="@dimen/setting_phone_ui_line1_margin_bottom"
+		android:textColorHint="@color/setting_about_resetpassword_text1"
+		android:singleLine="true"
+		android:inputType="phone"/>
+	
+    <Button
+        android:id="@+id/setting_phone_ui_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_black_bg_heigth"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginRight="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginTop="@dimen/register_button_margin_top"
+        android:background="@drawable/register_button_bg"
+        android:gravity="center"
+        android:text="@string/setting_phone_ui_next"
+        android:textColor="@color/title_content_textcolor"
+        android:textSize="@dimen/register_nick_text_size" />
+	
+</RelativeLayout>

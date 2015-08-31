@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="@dimen/login_image_view_width_height"
+        android:layout_height="@dimen/login_image_view_width_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/login_user_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_black_bg_heigth"
+		android:layout_marginLeft="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginRight="@dimen/login_black_bg_margin_left_right"
+        android:layout_below="@id/login_logo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_zhanghao_password" >
+
+        <TextView
+            android:id="@+id/login_user_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/login_zhanghao_margin_left"
+            android:text="@string/login_zhanghao"
+            android:textColor="@color/login_zhanghao_textview_color"
+            android:textSize="@dimen/login_zhanghao_textview_size" />
+
+        <EditText
+            android:id="@+id/login_user_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/login.edittext.style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/login_zhanghao_content_margin_left"
+            android:layout_marginRight="@dimen/login_zhanghao_content_margin_left"
+            android:layout_toRightOf="@id/login_user_textview"
+            android:hint="@string/login_zhanghao_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColorHint="@color/login_zhanghao_hint_color"
+            android:textColor="@color/login_edittext_color"
+            android:textSize="@dimen/login_zhanghao_textview_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_password_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_black_bg_heigth"
+        android:layout_below="@id/login_user_block"
+		android:layout_marginLeft="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginRight="@dimen/login_black_bg_margin_left_right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_password_margin_top"
+        android:background="@drawable/btn_zhanghao_password" >
+
+        <TextView
+            android:id="@+id/login_password_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/login_zhanghao_margin_left"
+            android:text="@string/login_password"
+            android:textColor="@color/login_zhanghao_textview_color"
+            android:textSize="@dimen/login_zhanghao_textview_size" />
+
+        <EditText
+            android:id="@+id/login_password_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/login.edittext.style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/login_zhanghao_content_margin_left"
+            android:layout_marginRight="@dimen/login_zhanghao_content_margin_left"
+            android:layout_toRightOf="@id/login_password_textview"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/login_zhanghao_hint_color"
+            android:textColor="@color/login_edittext_color"
+            android:textSize="@dimen/login_zhanghao_textview_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/login_forget_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/login_password_block"
+        android:layout_marginRight="@dimen/login_password_margin_right"
+        android:layout_marginTop="@dimen/login_password_margin_top"
+        android:background="@drawable/login_forget_text_bg"
+        android:text="@string/login_forget_text"
+        android:textColor="@color/login_forget_text_color"
+        android:textSize="@dimen/login_zhanghao_textview_size" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_black_bg_heigth"
+        android:layout_centerHorizontal="true"
+		android:layout_marginLeft="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginRight="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginTop="@dimen/login_login_button_margin_top"
+        android:background="@drawable/login_default_bg"
+        android:gravity="center"
+        android:enabled="false"
+        android:text="@string/login_login_text"
+        android:textColor="@color/login_zhanghao_textview_color"
+        android:textSize="@dimen/login_login_text_size" />
+
+    <Button
+        android:id="@+id/login_signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_black_bg_heigth"
+        android:layout_below="@id/login_button"
+        android:layout_marginLeft="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginRight="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginTop="@dimen/login_signup_margin_top"
+        android:background="@drawable/login_register_bg"
+        android:gravity="center"
+        android:text="@string/login_signup_text"
+        android:textColor="@color/login_zhanghao_textview_color"
+        android:textSize="@dimen/login_login_text_size" />
+
+    <Button 
+        android:id="@+id/login_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/login_thirdparty_qq_height"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/login_thritparty_qq_textview"
+        android:textSize="@dimen/login_thirdparty_qq_text_size"
+        android:textColor="@color/login_thirdparty_qq_text_color"
+        android:background="@drawable/login_qq_bg"
+        android:layout_marginBottom="@dimen/login_thirdparty_qq_margin_bottom"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

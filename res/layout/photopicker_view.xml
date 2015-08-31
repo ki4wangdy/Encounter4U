@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color" >
+
+    <include
+        android:id="@+id/photopicker_title"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_view" />
+
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/photopicker_title">
+	    <RelativeLayout
+	        android:id="@+id/imagegallery_block"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+	
+	        <FrameLayout
+	            android:id="@+id/grid_view_block"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <GridView
+	                android:id="@+id/photopicker_gridview"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_margin="@dimen/photo_picker_list_item_padding"
+	                android:horizontalSpacing="@dimen/photo_picker_list_item_padding"
+	                android:numColumns="4"
+	                android:scrollbars="@null"
+	                android:stretchMode="columnWidth"
+	                android:verticalSpacing="@dimen/photo_picker_list_item_padding" />
+	        </FrameLayout>
+	
+	        <ListView
+	            android:id="@+id/photopicker_listview"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginTop="@dimen/photo_picker_listview_margin_top"
+	            android:layout_below="@id/grid_view_block"
+	            android:cacheColorHint="@android:color/transparent"
+	            android:divider="@color/activity_background_color"
+	            android:dividerHeight="@dimen/photo_picker_list_item_padding"
+	            android:fadingEdge="none"
+	            android:fadingEdgeLength="0dp"
+	            android:overScrollFooter="@null"
+	            android:scrollbars="none" />
+	    </RelativeLayout>
+	
+	    <com.imrub.shoulder.module.photopicker.imageZoom.PhotoView
+	        android:id="@+id/imagegallery_photoview"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="invisible" />
+	
+	    <ImageView
+	        android:id="@+id/imagegallery_layer"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scaleType="fitXY"
+	        android:contentDescription="@null"
+	        android:src="@drawable/photopicker_layer"
+	        android:visibility="invisible" />
+    </FrameLayout>
+
+</RelativeLayout>

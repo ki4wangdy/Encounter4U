@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/title_bg_color" >
+
+    <ImageView 
+        android:id="@+id/title_bg_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@null"
+        android:src="@drawable/title_image_bg"/>
+
+    <View 
+        android:id="@+id/title_line"
+        android:layout_width="@dimen/line_width"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@id/title_bg_image"
+        android:background="@color/tilte_line_bg"
+        android:layout_marginTop="@dimen/title_line_margin_top_bottom"
+        android:layout_marginBottom="@dimen/title_line_margin_top_bottom"/>
+    
+    <TextView 
+        android:id="@+id/title_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title_line"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/title_content_margin_left"
+        android:textColor="@color/title_content_textcolor"
+        android:textSize="@dimen/title_content_textsize"
+        android:text="@string/title_title_content"/>
+    
+    <TextView 
+        android:id="@+id/photopicker_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/photo_picker_margin_right_top"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:textColor="@color/photopicker_title_button_text"
+        android:textSize="@dimen/photo_picker_title_button_textsize"
+        android:background="@drawable/photopicker_title_button_bg"
+        android:layout_marginTop="@dimen/photo_picker_margin_right_top"
+        android:contentDescription="@null"/>
+
+	<RelativeLayout 
+	    android:id="@+id/title_addnewfriend"
+	    android:layout_width="90dp"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentRight="true"
+	    android:visibility="gone"
+	    android:background="@drawable/title_new_addfriend_bg">
+    
+	    <TextView 
+	        android:id="@+id/title_add_newfriend"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/andrlist_add_newfriend"
+	        android:textSize="@dimen/addrlist_add_newfriend"
+	        android:textColor="@color/addrlist_add_newfriend"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/title_content_margin_left"/>
+	
+		<View 
+	        android:layout_width="@dimen/line_width"
+	        android:layout_height="match_parent"
+	        android:background="@color/tilte_line_bg"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/addrlist_add_newfriend_marginright"
+	        android:layout_marginTop="@dimen/title_line_margin_top_bottom"
+	        android:layout_marginBottom="@dimen/title_line_margin_top_bottom"/>
+    
+	</RelativeLayout>    
+	
+	<TextView 
+	    android:id="@+id/qiuknow_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="@dimen/detail_send_button_marginright"
+	    android:layout_marginTop="@dimen/detail_send_button_margintop"
+	    android:visibility="gone"
+	    android:gravity="center"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/detail_qiuknow_bg"
+	    android:text="@string/detail_send"
+	    android:textColor="@color/detail_send_button"
+	    android:textSize="@dimen/detail_send_button"/>
+	
+</RelativeLayout>

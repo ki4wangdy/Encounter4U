@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/yuanfencircle_blow_block"
+	android:paddingBottom="@dimen/yuanfencircle_blow_block_padding_bottom">
+	<TextView 
+		android:id="@+id/yuanfencircle_zan_detail"
+		android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+		android:drawableLeft="@drawable/yuanfencircle_zan_icon"
+		android:drawablePadding="@dimen/yuanfencircle_content_zanicon_marginright"
+		android:text="@string/yuanfencircle_content_user_zan_text1"
+		android:textColor="@color/yuanfencircle_content_user_zan_final"
+		android:textSize="@dimen/yuanfencircle_content_zantext"
+		android:layout_marginLeft="@dimen/yuanfencircle_content_zan_marginleft"
+		android:layout_marginTop="@dimen/yuanfencircle_content_zantext_margintop"/>
+		
+	<TextView 
+		android:id="@+id/yuanfencircle_comment_header"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/yuanfencircle_zan_detail"
+		android:text="@string/yuanfencircle_content_comment_text1"
+		android:textColor="@color/yuanfencircle_content_user_zan_text"
+		android:textSize="@dimen/yuanfencircle_content_zantext"
+		android:layout_marginTop="@dimen/yuanfencircle_content_comment_margintop"
+		android:layout_alignParentLeft="true"
+		android:drawableLeft="@drawable/yuanfencircle_commenticon"
+		android:drawablePadding="@dimen/yuanfencircle_content_zanicon_marginright"
+		android:layout_marginLeft="@dimen/yuanfencircle_content_zan_marginleft"/>
+	    
+	<LinearLayout 
+		android:id="@+id/yuanfencircle_comment_details"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_below="@id/yuanfencircle_comment_header">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/yuanfencicle_content_commentitem_marginright"
+			android:layout_marginLeft="@dimen/yuanfencircle_content_commentitem_marginleft"
+			android:layout_marginTop="@dimen/yuanfencircle_content_commentitem_margintop"
+			android:paddingTop="@dimen/yuanfencircle_content_commentitem_paddingtop"
+			android:background="@drawable/yuanfencircle_comment_item_bg"
+			android:text="@string/yuanfencircle_content_comment_dy_left_text"
+			android:textColor="@color/yuanfencircle_content_content_text"
+			android:textSize="@dimen/yuanfencircle_content_comment_dy_text" />
+
+		<TextView 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/yuanfencicle_content_commentitem_marginright"
+			android:layout_marginTop="@dimen/yuanfencircle_content_commentitem_margintop"
+			android:paddingTop="@dimen/yuanfencircle_content_commentitem_paddingtop"
+			android:layout_marginLeft="@dimen/yuanfencircle_content_commentitem_marginleft"
+			android:text="@string/yuanfencircle_content_comment_dy_left_text2"
+			android:textColor="@color/yuanfencircle_content_content_text"
+			android:textSize="@dimen/yuanfencircle_content_comment_dy_text"
+			android:background="@drawable/yuanfencircle_comment_item_bg"/>
+	        
+		<TextView 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/yuanfencicle_content_commentitem_marginright"
+			android:layout_marginTop="@dimen/yuanfencircle_content_commentitem_margintop"
+			android:paddingTop="@dimen/yuanfencircle_content_commentitem_paddingtop"
+			android:layout_marginLeft="@dimen/yuanfencircle_content_commentitem_marginleft"
+			android:text="@string/yuanfencircle_content_comment_dy_left_text3"
+			android:textColor="@color/yuanfencircle_content_content_text"
+			android:textSize="@dimen/yuanfencircle_content_comment_dy_text"
+			android:background="@drawable/yuanfencircle_comment_item_bg"/>
+	</LinearLayout>
+</RelativeLayout>

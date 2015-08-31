@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color">
+    
+    <ImageView 
+        android:id="@+id/yuanfencircle_content_no_icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/yuanfencircle_content_no_icon1_margintop"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/yuanfencircle_content_no_icon1"/>
+
+    <TextView 
+        android:id="@+id/yuanfencircle_content_no_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/yuanfencircle_content_no_icon1"
+        android:layout_marginTop="@dimen/yuanfencircle_content_no_text_margintop"
+        android:text="@string/yuanfencircle_content_no_text1"
+        android:textColor="@color/yuanfencircle_content_no_text"
+        android:textSize="@dimen/yuanfencircle_content_no_textsize"/>
+    
+	<TextView 
+	    android:id="@+id/yuanfencircle_content_no_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/yuanfencircle_content_no_text1"
+        android:layout_marginTop="@dimen/yuanfencircle_content_no_text2_margintop"
+        android:text="@string/yuanfencircle_content_no_text2"
+        android:textColor="@color/yuanfencircle_content_no_text"
+        android:textSize="@dimen/yuanfencircle_content_no_textsize"/>
+    
+	<Button 
+	    android:id="@+id/yuanfencircle_content_button"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/yuanfencircle_nocontent_button_bg"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/yuanfencircle_content_no_text2"
+	    android:layout_marginTop="@dimen/yuanfencircle_content_no_button_margintop"
+	    android:text="@string/yuanfencircle_content_no_button"
+	    android:textColor="@color/yuanfencircle_content_no_button_textcolor"
+	    android:textSize="@dimen/yuanfencircle_content_no_button_textsize"/>
+    
+</RelativeLayout>

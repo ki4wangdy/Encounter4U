@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color">
+
+	<include 
+        android:id="@+id/forget_newpw_title"
+        layout="@layout/title_view"
+        android:layout_alignParentTop="true"/>
+
+	<TextView 
+        android:id="@+id/forget_newpw_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/phone_verify_content_margin_top"
+        android:layout_below="@id/forget_newpw_title"
+        android:text="@string/forget_newpw_content"
+		android:textColor="@color/phone_verify_content_text_color"
+        android:textSize="@dimen/phone_verify_content_textsize"/>
+
+	<RelativeLayout 
+        android:id="@+id/forget_newpw_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phone_verify_block_height"
+        android:layout_below="@id/forget_newpw_content"
+        android:layout_marginTop="@dimen/phone_verify_block_margin_top_"
+        android:layout_marginLeft="@dimen/register_nick_block_margin_left"
+        android:layout_marginRight="@dimen/register_nick_block_margin_left">
+        
+		<View 
+            android:id="@+id/forget_newpw_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_nick_block_bg"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/register_nick_block_bg"/>
+	    
+		<TextView 
+            android:id="@+id/forget_newpw_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:text="@string/forget_newpw_text"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+		
+		<EditText
+		    android:id="@+id/forget_newpw_edittext"
+		    style="@style/login.edittext.style"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerVertical="true"
+		    android:imeOptions="actionDone"
+		    android:singleLine="true"
+		    android:gravity="bottom"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="@dimen/forget_pw_margin_left"
+		    android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+		    android:textColor="@color/register_nick_text_color"
+		    android:hint="@string/forget_newpw_hint"
+		    android:textColorHint="@color/register_nick_content_hint_text_color"
+		    android:textSize="@dimen/register_nick_text_size" />
+	</RelativeLayout>
+
+	<RelativeLayout 
+        android:id="@+id/forget_renewpw_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phone_verify_block_height"
+        android:layout_below="@id/forget_newpw_block"
+        android:layout_marginTop="@dimen/phone_verify_block_margin_top_"
+        android:layout_marginLeft="@dimen/register_nick_block_margin_left"
+        android:layout_marginRight="@dimen/register_nick_block_margin_left">
+        
+		<View 
+            android:id="@+id/forget_renewpw_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_nick_block_bg"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/register_nick_line_default"/>
+	    
+		<TextView 
+            android:id="@+id/forget_renewpw_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_nick_margin_left"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+            android:text="@string/forget_renewpw_text"
+            android:textColor="@color/register_nick_text_color"
+            android:textSize="@dimen/register_nick_text_size"/>
+		
+		<EditText
+		    android:id="@+id/forget_renewpw_edittext"
+		    style="@style/login.edittext.style"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerVertical="true"
+		    android:imeOptions="actionDone"
+		    android:singleLine="true"
+		    android:gravity="bottom"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="@dimen/forget_pw_margin_left"
+		    android:paddingBottom="@dimen/register_nick_text_padding_bottom"
+		    android:textColor="@color/register_nick_text_color"
+		    android:hint="@string/forget_renewpw_again"
+		    android:textColorHint="@color/register_nick_content_hint_text_color"
+		    android:textSize="@dimen/register_nick_text_size" />
+	</RelativeLayout>
+	
+	<Button
+        android:id="@+id/forget_renewpw_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_black_bg_heigth"
+        android:layout_marginLeft="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginRight="@dimen/login_black_bg_margin_left_right"
+        android:layout_marginTop="@dimen/register_button_margin_top"
+        android:background="@drawable/register_button_pre"
+        android:gravity="center"
+        android:text="@string/forget_renewpw_complish"
+        android:textColor="@color/title_content_textcolor"
+        android:textSize="@dimen/register_nick_text_size" />
+	
+</RelativeLayout>

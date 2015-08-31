@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    
+	<include 
+		android:id="@+id/setting_user_detail_modify_title"
+		layout="@layout/title_view"
+		android:layout_alignParentTop="true"/>
+	
+	<EditText 
+	    android:id="@+id/setting_user_detail_modify_edittext"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="textMultiLine"
+	    android:background="@null"
+	    android:paddingLeft="@dimen/detail_qiuknow_edittext_paddingleft"
+	    android:paddingRight="@dimen/detail_qiuknow_edittext_paddingright"
+	    android:layout_marginLeft="@dimen/detail_qiuknow_edittext_marginleft"
+	    android:layout_marginRight="@dimen/detail_qiuknow_edittext_marginleft"
+	    android:layout_below="@id/setting_user_detail_modify_title"
+	    android:layout_marginTop="@dimen/detail_qiuknow_edittext_margintop"
+	    android:textSize="@dimen/detail_qiuknow_edittext_size"
+	    android:textColor="@color/detail_qiuknow_textcolor"/>
+	
+	<TextView 
+	    android:id="@+id/setting_user_detail_modify_numberlimit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+		android:text="@string/dialog_reply_textlimit"
+		android:textColor="@color/dialog_reply_text_color"
+		android:textSize="@dimen/dialog_reply_text_size"
+		android:layout_alignBottom="@id/setting_user_detail_modify_edittext"
+	    android:layout_alignRight="@id/setting_user_detail_modify_edittext"/>
+	
+	<View 
+	    android:id="@+id/setting_user_detail_modify_line"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/register_nick_block_bg"
+		android:layout_below="@id/setting_user_detail_modify_edittext"
+		android:layout_alignLeft="@id/setting_user_detail_modify_edittext"
+		android:layout_alignRight="@id/setting_user_detail_modify_edittext"
+		android:layout_marginTop="2dp"
+		android:background="@drawable/register_nick_block_bg"/>
+	
+	<TextView 
+	    android:id="@+id/setting_user_special"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/setting_user_detail_modify_line"
+	    android:text="@string/setting_user_detail_modify_text"
+	    android:textColor="@color/detail_reply_text"
+	    android:textSize="@dimen/detail_bottom_item_size"
+	    android:layout_alignLeft="@id/setting_user_detail_modify_line"
+	    android:layout_marginTop="@dimen/detail_qiuknow_realtext_margin_top_left"
+	    android:layout_marginLeft="@dimen/detail_qiuknow_realtext_margin_top_left"/>
+	
+</RelativeLayout>

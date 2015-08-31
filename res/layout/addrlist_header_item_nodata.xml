@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/title_content_textcolor">
+    
+    <TextView 
+        android:id="@+id/addrlist_empty_text_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/addrlist_empty_first_text_margin_top"
+        android:text="@string/addrlist_empty_first_text"
+        android:textColor="@color/main_ui_header_text_color"
+        android:textSize="@dimen/detail_name_size"/>
+
+    <TextView 
+        android:id="@+id/addrlist_empty_text_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/addrlist_empty_text_first"
+        android:layout_marginTop="@dimen/addrlist_icon_margin_left"
+        android:text="@string/addrlist_empty_second_text"
+        android:textColor="@color/main_ui_header_text_color"
+        android:textSize="@dimen/addrlist_yuan_signature_text_size"/>
+    
+	<include 
+	    android:id="@+id/main_ui_center_block"
+	    layout="@layout/main_ui_center"/>
+    
+</RelativeLayout>

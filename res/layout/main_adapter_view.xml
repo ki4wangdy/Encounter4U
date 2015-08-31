@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_ui_item_heigth">
+    
+    <ImageView 
+        android:id="@+id/user_logo"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/main_ui_image_margin_left"
+        android:layout_marginRight="@dimen/main_ui_image_margin_left"
+        android:layout_marginTop="@dimen/main_ui_image_margin_top"
+        android:layout_marginBottom="@dimen/main_ui_image_margin_top"
+        android:src="@drawable/icon_66x66"/>
+
+    <TextView 
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_logo"
+        android:layout_marginTop="@dimen/main_ui_name_margin_top"
+        android:text="@string/main_ui_name"
+        android:textColor="@color/main_ui_name_color"
+        android:textSize="@dimen/main_ui_name_size"/>
+    
+    <TextView 
+        android:id="@+id/user_encounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_logo"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="@dimen/main_ui_encounter_margin_top"
+        android:text="@string/main_ui_encounter"
+        android:textColor="@color/main_ui_encounter_color"
+        android:textSize="@dimen/main_ui_encounter_size"/>
+    
+    <TextView 
+        android:id="@+id/user_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/user_logo"
+        android:layout_below="@id/user_encounter"
+        android:layout_marginTop="@dimen/main_ui_encounter_margin_top"
+        android:layout_marginRight="@dimen/main_ui_signature_margin_right"
+        android:text="@string/main_ui_signature"
+        android:textColor="@color/main_ui_encounter_color"
+        android:textSize="@dimen/main_ui_signature"/>
+    
+    <TextView 
+        android:id="@+id/user_encounter_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/user_name"
+        android:layout_marginRight="@dimen/main_ui_encounter_time_margin_right"
+        android:text="@string/main_ui_encounter_time"
+        android:textColor="@color/main_ui_encounter_color"
+        android:textSize="@dimen/main_ui_encounter_size"/>
+    
+</RelativeLayout>
+        

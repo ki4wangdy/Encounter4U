@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView 
+        android:id="@+id/yuanfencircle_comment_header_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:layout_alignParentLeft="true"
+       	android:layout_marginRight="@dimen/yuanfencircle_content_zanicon_marginright"
+        android:layout_marginTop="@dimen/yuanfencircle_content_zanicon_margintop"
+        android:layout_marginLeft="@dimen/yuanfencircle_content_zanicon_marginleft"
+        android:src="@drawable/yuanfencircle_commenticon"/>
+    
+    <TextView 
+        android:id="@+id/yuanfencircle_comment_header_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yuanfencircle_content_comment_text1"
+		android:textColor="@color/yuanfencircle_content_user_zan_text"
+        android:textSize="@dimen/yuanfencircle_content_zantext"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/yuanfencircle_content_zantext_margintop"
+        android:layout_toRightOf="@id/yuanfencircle_comment_header_icon"/>
+
+    <TextView 
+        android:id="@+id/yuanfencircle_comment_header_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yuanfencircle_content_comment_text2"
+		android:textColor="@color/yuanfencircle_content_user_zan_text"
+        android:textSize="@dimen/yuanfencircle_content_zantext"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/yuanfencircle_content_zantext_margintop"
+        android:layout_toRightOf="@id/yuanfencircle_comment_header_icon"/>
+
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/yuanfencircle_content_zantext_margintop"
+        android:layout_toRightOf="@id/yuanfencircle_comment_header_icon">
+        <ImageView 
+            android:id="@+id/yuanfencircle_comment_dy_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:layout_marginTop="@dimen/yuanfencircle_content_comment_icon_margintop"
+            android:src="@drawable/yuanfencircle_comment_dy"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/yuanfencircle_content_comment_dy_marginleft"
+            android:layout_toRightOf="@id/yuanfencircle_comment_dy_icon"
+            android:text="@string/yuanfencircle_content_comment_dy_text"
+            android:textColor="@color/yuanfencircle_content_comment_dy_text"
+            android:textSize="@dimen/yuanfencircle_content_comment_dy_text"/>
+    </RelativeLayout>
+    
+</RelativeLayout>

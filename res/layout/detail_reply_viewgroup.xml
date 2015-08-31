@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    	android:id="@+id/detail_reply_blockview"
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/userinfo_reply_background"
+	    android:paddingLeft="@dimen/detail_reply_block_padding_left"
+	    android:paddingRight="@dimen/detail_reply_block_padding_left"
+	    android:paddingTop="@dimen/detail_reply_block_padding_right"
+	    android:paddingBottom="@dimen/detail_reply_block_padding_right"
+	    android:layout_marginLeft="@dimen/detail_reply_block_marginleftright"
+	    android:layout_marginRight="@dimen/detail_reply_block_marginleftright">
+	    
+	    <GridView
+	        android:id="@+id/userinfo_reply_gridview"
+	        android:numColumns="1"
+	        android:stretchMode="columnWidth"
+	        android:paddingLeft="@dimen/detail_reply_block_gridview_padding_left"
+	        android:paddingRight="@dimen/detail_reply_block_gridview_padding_left"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"/>
+	    
+	    <View 
+	        android:id="@+id/userinfo_reply_line"
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:layout_marginTop="@dimen/detail_reply_line_margintop"
+	        android:background="@color/detail_reply_block_line"
+	        android:layout_below="@id/userinfo_reply_gridview"/>
+	    
+	    <Button 
+	        android:layout_width="@dimen/detail_reply_button_width"
+	        android:layout_height="@dimen/detail_reply_button_height"
+	        android:layout_below="@id/userinfo_reply_line"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/detail_reply_text_huifu"
+	        android:textColor="@color/detail_reply_button_textcolor"
+	        android:textSize="@dimen/detail_reply_button_textsize"
+	        android:background="@drawable/detail_reply_bg"
+	        android:layout_marginRight="@dimen/detail_reply_block_button_marginright"
+	        android:layout_marginTop="@dimen/detail_reply_block_button_margintopbottom"/>
+	    
+	</RelativeLayout>

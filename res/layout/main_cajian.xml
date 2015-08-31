@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/title_content_textcolor">
+
+	<TextView 
+	    android:id="@+id/main_ui_header_setting"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/main_ui_header_height"
+	    android:layout_alignParentTop="true"
+	    android:gravity="center_vertical"
+	    android:background="@color/main_ui_header_bg"
+	    android:drawableLeft="@drawable/main_ui_header_nolan"
+	    android:paddingLeft="@dimen/main_ui_header_margin_left"
+	    android:drawablePadding="@dimen/main_ui_header_margin_text_icon"
+	    android:text="@string/main_ui_header_content"
+	    android:textColor="@color/main_ui_header_text_color"
+	    android:textSize="@dimen/main_ui_text_size"/>  
+
+	<com.handmark.pulltorefresh.library.PullToRefreshScrollView 
+		android:id="@+id/main_ui_notlist_block"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/main_ui_header_setting">
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@color/title_content_textcolor">
+		    
+		    <TextView 
+				android:id="@+id/main_ui_first_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentTop="true"
+				android:layout_marginTop="@dimen/main_ui_first_text_margintop"
+				android:text="@string/main_ui_center_text1"
+				android:textColor="@color/main_ui_header_text_color"
+				android:textSize="@dimen/main_ui_first_text_size"/>
+		
+			<TextView 
+				android:id="@+id/main_ui_second_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/main_ui_text_margin"
+				android:layout_below="@id/main_ui_first_text"
+				android:text="@string/main_ui_center_text2"
+				android:textColor="@color/main_ui_header_text_color"
+				android:textSize="@dimen/main_ui_second_text_size"
+				android:layout_centerHorizontal="true"/>
+		    
+			<TextView 
+				android:id="@+id/main_ui_center_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="@dimen/main_ui_center_margintop"
+				android:layout_below="@id/main_ui_second_text"
+				android:background="@drawable/main_ui_text_bg"
+				android:text="@string/main_ui_center_text3"
+				android:textColor="@color/main_ui_header_text_color"
+				android:textSize="@dimen/main_ui_text_size"/>
+			
+		</RelativeLayout>
+	</com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+	<ViewStub 
+	    android:id="@+id/main_ui_listview"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout="@layout/main_cajian_list"
+	    android:layout_below="@id/main_ui_header_setting"/>
+		
+</RelativeLayout>

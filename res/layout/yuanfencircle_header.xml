@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/yuanfencircle_header_block_height"
+    android:background="@drawable/yuanfencircle_header_bg">
+    
+    <ImageView 
+        android:id="@+id/yuanfencircle_header_image"
+        android:layout_width="@dimen/yuanfencircle_header_image_width_height"
+        android:layout_height="@dimen/yuanfencircle_header_image_width_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/yuanfencircle_header_margin_left"
+        android:layout_marginTop="@dimen/yuanfencircle_header_margin_top"
+        android:contentDescription="@null"
+        android:src="@drawable/main_ui_header_nopic"
+        android:scaleType="fitXY"/>
+    
+    <TextView 
+        android:id="@+id/yuanfencircle_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/yuanfencircle_header_image"
+        android:layout_below="@id/yuanfencircle_header_image"
+        android:layout_marginTop="@dimen/yuanfencircle_header_nickname_margintop"
+        android:text="@string/yuanfencircle_header_nickname"
+        android:textColor="@color/yuanfencircle_header_nickname"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/yuanfencircle_header_nickname_size"/>
+    
+    <TextView 
+        android:id="@+id/yuanfencircle_dongtai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/yuanfencircle_header_image"
+        android:layout_below="@id/yuanfencircle_nickname"
+        android:layout_marginTop="@dimen/yuanfencircle_header_dongtai_margintop"
+        android:text="@string/yuanfencircle_header_dongtai"
+        android:textColor="@color/yuanfencircle_header_dongtai"
+		android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/yuanfencircle_header_dongtai_size"/>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color" >
+
+    <RelativeLayout
+        android:id="@+id/chat_info_block"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/title_content_textcolor" >
+        <TextView
+            android:id="@+id/main_ui_header_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_ui_header_height"
+            android:layout_alignParentTop="true"
+            android:background="@color/main_ui_header_bg"
+            android:drawableLeft="@drawable/main_ui_header_nolan"
+            android:drawablePadding="@dimen/main_ui_header_margin_text_icon"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/main_ui_header_margin_left"
+            android:text="@string/main_ui_header_content"
+            android:textColor="@color/main_ui_header_text_color"
+            android:textSize="@dimen/main_ui_text_size" />
+        <ListView
+            android:id="@+id/chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/main_ui_header_setting"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/main_ui_line_color"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/main_ui_listitem_bg"
+            android:scrollbars="@null" />
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+	<RelativeLayout 
+	    android:id="@+id/progress_bar"
+	    android:layout_gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+		<ProgressBar
+		    android:id="@+id/progress"
+			style="?android:attr/progressBarStyleSmall"
+			android:background="@android:color/transparent"
+			android:layout_alignParentLeft="true"
+		    android:layout_width="@dimen/chat_room_header_progressbar_height"
+			android:layout_height="@dimen/chat_room_header_progressbar_height"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/progress"
+	        android:layout_marginLeft="@dimen/activity_progress_margin_left"
+	        android:text="@string/activity_progress_bar_text"
+	        android:textColor="@color/activity_progress_bar_text"
+	        android:textSize="@dimen/activity_progress_bar_text"/>
+	</RelativeLayout>
+
+    
+</FrameLayout>

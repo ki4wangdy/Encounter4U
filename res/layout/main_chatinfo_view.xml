@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_ui_chat_view_height">
+
+    <ImageView 
+        android:id="@+id/chat_image_icon"
+        android:layout_width="@dimen/main_ui_chat_view_height"
+        android:layout_height="@dimen/main_ui_chat_view_height"
+        android:layout_marginLeft="@dimen/main_ui_chat_image_margin_right"
+        android:layout_marginRight="@dimen/main_ui_chat_image_margin_right"
+        android:paddingTop="@dimen/detail_bottom_margin_top"
+        android:paddingBottom="@dimen/detail_bottom_margin_top"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_96x96"/>
+    
+    <TextView 
+        android:id="@+id/chat_msg_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/main_ui_chat_numbericon_margin_top"
+        android:layout_marginLeft="@dimen/main_ui_chat_numbericon_margin_left"
+        android:background="@drawable/satellite_number_update"
+        android:text="@string/main_ui_chat_icon_number"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"/>
+    
+    <TextView 
+        android:id="@+id/chat_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chat_image_icon"
+        android:layout_marginTop="@dimen/main_ui_image_margin_left"
+        android:singleLine="true"
+        android:maxWidth="@dimen/main_ui_chat_title_max_length"
+        android:text="@string/main_ui_chat_title_cotent"
+        android:textColor="@color/main_ui_name_color"
+        android:textSize="@dimen/detail_viewpager_text_size"/>
+    
+    <TextView 
+        android:id="@+id/chat_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_title"
+        android:layout_toRightOf="@id/chat_image_icon"
+        android:drawablePadding="@dimen/main_ui_chat_numbericon_margin_top"
+        android:layout_marginTop="@dimen/main_ui_chat_content_margin_bottom"
+        android:singleLine="true"
+        android:maxWidth="@dimen/main_ui_chat_content_max_length"
+        android:text="@string/main_ui_chat_content"
+        android:textColor="@color/main_ui_encounter_color"
+        android:textSize="@dimen/main_ui_chat_content_size"/>
+    
+    <TextView 
+        android:id="@+id/chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/chat_title"
+        android:layout_marginRight="@dimen/main_ui_encounter_time_margin_right"
+        android:text="@string/main_ui_chat_time"
+        android:textColor="@color/main_ui_encounter_color"
+        android:textSize="@dimen/main_ui_encounter_size"/>
+
+    <ImageView
+        android:id="@+id/chat_nosound_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignBottom="@+id/chat_content"
+        android:layout_alignRight="@+id/chat_time"
+        android:contentDescription="@null"
+        android:src="@drawable/chat_nosound_icon" />
+    
+</RelativeLayout>

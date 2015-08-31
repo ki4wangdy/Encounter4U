@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_newerguide" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpContaner"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/areaBottom"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/areaPoints"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            android:layout_marginBottom="6dp" >
+
+            <LinearLayout
+                android:id="@+id/areaPageNumberIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/areaNext"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@id/areaPoints"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/btnEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/areaPoints"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="180dp"
+            android:textSize="@dimen/newguid_btn_enter_textsize"
+            android:layout_marginBottom="16dp"
+            android:text="@string/newguid_pass"
+            android:textColor="#ffffff" />
+        
+        <View
+            android:id="@+id/btnLogin"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_above="@id/areaPoints"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

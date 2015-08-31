@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<FrameLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:background="@color/activity_background_color">  
+    
+	<com.imrub.shoulder.module.addrlist.IndexSectionListView 
+	    android:id="@+id/addrlist_view"  
+	    android:layout_width="fill_parent"  
+	    android:layout_height="fill_parent"  
+	    android:fastScrollEnabled="true"
+	    android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@drawable/main_ui_listitem_bg"
+        android:visibility="gone"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:overScrollFooter="@null"
+        android:scrollbars="none" />  
+
+	<RelativeLayout 
+	    android:id="@+id/progress_bar"
+	    android:layout_gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+		<ProgressBar
+		    android:id="@+id/progress"
+			style="?android:attr/progressBarStyleSmall"
+			android:background="@android:color/transparent"
+			android:layout_alignParentLeft="true"
+		    android:layout_width="@dimen/chat_room_header_progressbar_height"
+			android:layout_height="@dimen/chat_room_header_progressbar_height"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/progress"
+	        android:layout_marginLeft="@dimen/activity_progress_margin_left"
+	        android:text="@string/activity_progress_bar_text"
+	        android:textColor="@color/activity_progress_bar_text"
+	        android:textSize="@dimen/activity_progress_bar_text"/>
+	</RelativeLayout>
+		    
+</FrameLayout> 

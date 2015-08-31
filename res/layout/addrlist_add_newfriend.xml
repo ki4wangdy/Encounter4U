@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/addrlist_new_addriend_default">
+    
+    <RelativeLayout 
+        android:id="@+id/addr_addnewfriend_upblock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_bg_color"
+        android:layout_alignParentTop="true">
+
+	    <ImageView 
+	        android:id="@+id/addnewfriend_back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:contentDescription="@null"
+	        android:src="@drawable/title_image_bg"/>
+	
+	    <View 
+	        android:id="@+id/addnewfriend_line"
+	        android:layout_width="@dimen/line_width"
+	        android:layout_height="match_parent"
+	        android:layout_alignRight="@id/addnewfriend_back"
+	        android:background="@color/tilte_line_bg"
+	        android:layout_marginTop="@dimen/title_line_margin_top_bottom"
+	        android:layout_marginBottom="@dimen/title_line_margin_top_bottom"/>
+        
+	    <ImageView 
+	        android:id="@+id/addnewfriend_search"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/addnewfriend_line"
+	        android:contentDescription="@null"
+	        android:src="@drawable/addr_search"/>
+	    
+	    <ImageView 
+	        android:id="@+id/addnewfriend_delete"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:contentDescription="@null"
+	        android:visibility="invisible"
+	        android:background="@drawable/title_new_addfriend_bg"
+	        android:src="@drawable/addr_search_delete"/>
+	    
+	    <EditText 
+	        android:id="@+id/addnewfriend_edittext"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@null"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@id/addnewfriend_search"
+	        android:layout_toLeftOf="@id/addnewfriend_delete"
+	        android:textColor="@color/addrlist_new_addfriend"
+	        android:textSize="@dimen/addrlist_search_textsize"
+	        android:hint="@string/addrlist_new_search_hint"
+	        android:textColorHint="@color/addrlist_new_addfriend_hint"
+	        android:singleLine="true"
+	        android:inputType="number"/>
+	    
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"
+	        android:layout_toRightOf="@id/addnewfriend_line"
+	        android:layout_marginLeft="@dimen/addrlist_search_line_marginleft"
+	        android:background="@color/addrlist_new_addfriend_hint"
+	        android:layout_marginRight="@dimen/addrlist_search_line_marginright"
+	        android:layout_marginBottom="@dimen/addrlist_search_line_marginbottom"/>
+	    
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/addnewfriend_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/addrlist_new_bottom_block_height"
+        android:visibility="gone"
+        android:background="@drawable/main_ui_listitem_bg"
+        android:layout_below="@id/addr_addnewfriend_upblock">
+        
+        <ImageView 
+            android:id="@+id/addnewfriend_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/addrlist_result_image_marginleft"
+            android:contentDescription="@null"
+            android:src="@drawable/addr_addnewfriend_search"/>
+        
+        <TextView 
+            android:id="@+id/addnewfriend_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addrlist_result_text"
+            android:textSize="@dimen/addrlist_result_text_size"
+            android:layout_toRightOf="@id/addnewfriend_search_icon"
+            android:layout_marginLeft="@dimen/addrlist_result_image_marginleft"
+            android:layout_centerVertical="true"/>
+        
+        <TextView 
+            android:id="@+id/addnewfriend_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/addnewfriend_text1"
+            android:layout_centerVertical="true"
+            android:textColor="@color/addrlist_result_text"
+            android:textSize="@dimen/addrlist_result_text_size"/>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/addrlist_result_image_marginleft"
+            android:layout_marginRight="@dimen/addrlist_result_image_marginleft"
+            android:background="@color/main_ui_line_color"/>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

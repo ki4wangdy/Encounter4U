@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView 
+        android:id="@+id/yuanfencircle_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/yuanfencircle_content_zan_margintop"
+        android:layout_marginLeft="@dimen/yuanfencircle_content_zan_marginleft"
+        android:src="@drawable/yuanfencircle_like_bg"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"/>
+
+	<ImageView 
+	    android:id="@+id/yuanfencircle_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/yuanfencircle_content_zan_margintop"
+        android:layout_toRightOf="@id/yuanfencircle_zan"
+        android:src="@drawable/yuanfencircle_comment_bg"
+        android:layout_marginLeft="@dimen/yuanfencircle_content_comment_marginleft"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"/>
+    
+    
+</RelativeLayout>

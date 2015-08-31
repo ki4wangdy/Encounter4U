@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <TextView
+        android:id="@+id/chat_room_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/msg_time_size"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/chat_room_margin"
+        android:layout_marginTop="@dimen/chat_room_margin"
+        android:paddingLeft="@dimen/chat_room_time_margin_left_right"
+        android:paddingRight="@dimen/chat_room_time_margin_left_right"
+        android:background="@drawable/chat_room_time_bg"
+        android:gravity="center"
+        android:text="@string/chat_room_time"
+        android:textColor="@color/title_content_textcolor"
+        android:textSize="@dimen/chat_room_time_size" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/chat_room_margin"
+        android:layout_below="@id/chat_room_time">
+        
+        <ImageView 
+            android:id="@+id/chat_room_icon"
+            android:layout_width="@dimen/chat_room_image_width_height"
+            android:layout_height="@dimen/chat_room_image_width_height"
+            android:contentDescription="@null"
+            android:layout_marginRight="@dimen/chat_room_image_margin_left"
+            android:src="@drawable/icon_80x80"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"/>
+        
+        <RelativeLayout 
+            android:id="@+id/content_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:background="@drawable/chat_room_qipao_right_bg"
+			android:layout_marginRight="@dimen/chat_room_margin_left_right"
+			android:padding="0dp"
+            android:layout_toLeftOf="@id/chat_room_icon"
+			android:layout_alignTop="@id/chat_room_icon">
+			<TextView
+				android:id="@+id/content"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:paddingTop="@dimen/chat_room_right_padding_top_bottom"
+				android:paddingBottom="@dimen/chat_room_right_padding_top_bottom"
+				android:paddingLeft="@dimen/chat_room_right_padding_left"
+				android:paddingRight="@dimen/chat_room_right_padding_right"
+				android:maxWidth="@dimen/chat_room_content_max_length"
+				android:text="@string/chat_room_left_content"
+				android:textColor="@color/chat_room_text_color"
+				android:textSize="@dimen/chat_room_left_content_size"/>
+        </RelativeLayout>
+		
+		<ImageView 
+			android:id="@+id/chat_room_state"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/content_block"
+			android:contentDescription="@null"
+			android:layout_centerVertical="true"
+			android:src="@drawable/chat_room_error"
+			android:visibility="gone"
+			android:layout_marginRight="@dimen/chat_room_content_margin_left"/>
+    </RelativeLayout>
+    
+</RelativeLayout>

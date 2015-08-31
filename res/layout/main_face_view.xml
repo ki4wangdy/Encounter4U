@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include 
+        android:id="@+id/main_ui_header_title"
+        layout="@layout/main_ui_header_top"/>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/main_ui_header_title">
+	    <android.support.v4.view.ViewPager
+	        android:id="@+id/viewanimator"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+	    </android.support.v4.view.ViewPager>
+	    <FrameLayout 
+	        android:id="@+id/satellite_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+		    <com.imrub.shoulder.module.main.MaskingView 
+		        android:id="@+id/maskingview"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="@color/main_ui_bantouming_color"/>
+		    <android.view.ext.SatelliteMenu
+		        android:id="@+id/satellite_menu"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:visibility="invisible"
+		        android:layout_gravity="bottom|center_horizontal"/>
+	    </FrameLayout>
+    </FrameLayout>
+    
+</RelativeLayout>

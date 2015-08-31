@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_color">
+    
+    <include 
+        android:id="@+id/setting_chat_title"
+        layout="@layout/title_view"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout 
+        android:id="@+id/setting_chat_first_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_cajiansetting_middle_block_height"
+        android:layout_marginTop="@dimen/setting_cajiansetting_block_margin_top"
+        android:layout_below="@id/setting_chat_title"
+        android:background="@drawable/main_ui_listitem_bg">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_cajiansetting_text_margin_left"
+            android:text="@string/setting_cajiansetting_chat_first_content"
+            android:textColor="@color/setting_usr_cajianstting_text"
+            android:textSize="@dimen/setting_cajiansetting_text_size"/>
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/setting_chat_second_block"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_cajiansetting_middle_block_height"
+        android:layout_below="@id/setting_chat_first_block"
+        android:layout_marginTop="@dimen/setting_cajiansetting_block_margin_top"
+        android:background="@drawable/main_ui_listitem_bg">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setting_cajiansetting_text_margin_left"
+            android:text="@string/setting_cajiansetting_chat_clear_allcontent"
+            android:textColor="@color/setting_usr_cajianstting_text"
+            android:textSize="@dimen/setting_cajiansetting_text_size"/>
+    </RelativeLayout>
+    
+    
+</RelativeLayout>
